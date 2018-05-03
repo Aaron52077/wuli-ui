@@ -1,0 +1,12 @@
+<template name="wuli-steps">
+    <view class="wuli-steps__{{ type == 'vertical' ? 'vertical' : 'horizontal' }} wuli-steps--{{ steps.length }} {{ className }}">
+        <view wx:for="{{ steps }}" wx:for-item="step" wx:key="unique" wx:for-index="index" class="wuli-steps__step {{ hasDesc ? 'wuli-steps__step--db-title' : '' }} {{ index == 0 ? 'wuli-steps__step--first-child' : '' }} {{ index == steps.length - 1 ? 'wuli-steps__step--last-child' : '' }} {{ step.done ? 'wuli-steps__step--done' : '' }} {{ step.current ? 'wuli-steps__step--cur' : '' }}">
+            <view class="wuli-steps__title">{{ step.text }}</view>
+            <view wx:if="{{ hasDesc && step.desc }}" class="wuli-steps__title wuli-steps__title--desc">{{ step.desc }}</view>
+            <view class="wuli-steps__icons">
+                <view class="wuli-steps__circle"></view>
+            </view>
+            <view class="wuli-steps__line"></view>
+        </view>
+    </view>
+</template>

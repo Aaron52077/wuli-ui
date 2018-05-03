@@ -1,0 +1,70 @@
+<import src="/components/steps/index.wxml" />
+
+<view class="container">
+
+    <view class="doc-title wuli-hairline__bottom">STEPS</view>
+
+    <view class="wuli-panel">
+        <view class="wuli-cell">
+            <view class="wuli-cell__bd">
+                <template is="wuli-steps" data="{{ type: 'horizon', steps: steps }}"></template>
+            </view>
+        </view>
+
+        <view class="wuli-cell">
+            <view class="wuli-cell__bd">
+                <template is="wuli-steps" data="{{ type: 'horizon', steps: steps2 }}"></template>
+            </view>
+        </view>
+
+        <view class="wuli-cell wuli-cell--last-child">
+            <view class="wuli-cell__bd">
+                <template is="wuli-steps" data="{{ type: 'horizon', steps: steps3 }}"></template>
+            </view>
+        </view>
+    </view>
+
+    <view class="wuli-panel-title">有描述的steps</view>
+    <view class="wuli-panel">
+        <view class="wuli-cell">
+            <view class="wuli-cell__bd">
+                <template is="wuli-steps" data="{{ type: 'horizon', hasDesc: true, steps: steps }}"></template>
+            </view>
+        </view>
+
+        <view class="wuli-cell">
+            <view class="wuli-cell__bd">
+                <template is="wuli-steps" data="{{ type: 'horizon', hasDesc: true, steps: steps2 }}"></template>
+            </view>
+        </view>
+
+        <view class="wuli-cell wuli-cell--last-child">
+            <view class="wuli-cell__bd">
+                <template is="wuli-steps" data="{{ type: 'horizon', hasDesc: true, steps: steps3 }}"></template>
+            </view>
+        </view>
+    </view>
+
+    <view class="wuli-panel-title">垂直方向的steps</view>
+    <view class="wuli-panel">
+        <view class="wuli-cell wuli-cell">
+            <view class="wuli-cell__bd">
+                <template is="wuli-steps" data="{{ type: 'vertical', hasDesc: true, steps }}"></template>
+            </view>
+        </view>
+
+        <view class="wuli-cell wuli-cell--last-child">
+            <view class="wuli-cell__bd">
+                <template is="wuli-steps" data="{{ type: 'vertical', steps }}"></template>
+            </view>
+        </view>
+    </view>
+
+    <view class="wuli-panel-title">可自定义class</view>
+    <view class="wuli-panel">
+        <view class="wuli-cell__bd">
+            <template is="wuli-steps" data="{{ type: 'vertical', steps, className: 'my-class' }}"></template>
+        </view>
+    </view>
+
+</view>

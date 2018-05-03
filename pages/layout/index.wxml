@@ -1,0 +1,33 @@
+<view class="container">
+
+    <view class="doc-title wuli-hairline--bottom">LAYOUT</view>
+
+    <view class="wuli-panel-title">基础用法</view>
+    <view class="doc-description">Layout 组件提供了24列栅格，添加 wuli-col-x 可以设置元素所占宽度</view>
+    <view class="wuli-panel">
+        <view class="wuli-row">
+            <view class="wuli-col wuli-col-8">
+                span: 8
+            </view>
+            <view class="wuli-col wuli-col-8">
+                span: 8
+            </view>
+            <view class="wuli-col wuli-col-8">
+                span: 8
+            </view>
+        </view>
+    </view>
+
+    <view class="wuli-panel-title">offset</view>
+    <view class="doc-description">添加 wuli-col-offset-x 类可以设置列的偏移宽度，计算方式与 span 相同</view>
+    <view class="wuli-panel">
+        <view class="wuli-row">
+            <view class="wuli-col wuli-col-4">span: 4</view>
+            <view class="wuli-col wuli-col-10 wuli-col-offset-4">offset: 4, span: 10</view>
+        </view>
+        <view class="wuli-row">
+            <view class="wuli-col wuli-col-12 wuli-col-offset-12">offset: 12, span: 12</view>
+        </view>
+    </view>
+
+</view>

@@ -1,0 +1,56 @@
+<view class="container">
+
+    <view class="doc-title wuli-hairline__bottom">BUTTON</view>
+
+    <view class="wuli-panel-title">普通按钮</view>
+    <view class="wuli-panel">
+        <view class="wuli-btns">
+            <button class="wuli-btn">取消订单</button>
+            <button class="wuli-btn wuli-btn__primary">确认付款</button>
+            <button class="wuli-btn wuli-btn__danger">确认付款</button>
+            <button class="wuli-btn wuli-btn__warn">确认付款</button>
+        </view>
+    </view>
+
+    <view class="wuli-panel-title">大号按钮，没有边框线及圆角</view>
+    <view class="wuli-panel">
+        <button class="wuli-btn wuli-btn__large wuli-btn__primary">确认付款</button>
+        <button class="wuli-btn wuli-btn__large wuli-btn__warn">立即购买</button>
+        <button class="wuli-btn wuli-btn__large wuli-btn__danger">立即购买</button>
+    </view>
+
+    <view class="wuli-panel-title">小号按钮</view>
+    <view class="wuli-panel" style="padding: 15px;">
+        <button class="wuli-btn wuli-btn__small">取消订单</button>
+        <button class="wuli-btn wuli-btn__small wuli-btn__primary">确认付款</button>
+    </view>
+
+    <view class="wuli-panel-title">迷你按钮</view>
+    <view class="wuli-panel" style="padding: 15px;">
+        <button class="wuli-btn wuli-btn__mini wuli-btn__primary">取消订单</button>
+        <button class="wuli-btn wuli-btn__mini wuli-btn__info">确认付款</button>
+        <button class="wuli-btn wuli-btn__mini wuli-btn__warn">确认付款</button>
+        <button class="wuli-btn wuli-btn__mini wuli-btn__danger">确认付款</button>
+    </view>
+
+    <view class="wuli-panel-title">Loading</view>
+    <view class="wuli-panel">
+        <view class="wuli-btns">
+            <button class="wuli-btn wuli-btn__loading">取消订单</button>
+            <button class="wuli-btn wuli-btn__loading wuli-btn__primary">确认付款</button>
+            <button class="wuli-btn wuli-btn__loading wuli-btn__danger">确认付款</button>
+            <button class="wuli-btn wuli-btn__loading wuli-btn__warn">确认付款</button>
+        </view>
+    </view>
+
+    <view class="wuli-panel-title">Disabled</view>
+    <view class="wuli-panel">
+        <view class="wuli-btns">
+            <button class="wuli-btn wuli-btn__disabled" disabled>取消订单</button>
+            <button class="wuli-btn wuli-btn__disabled wuli-btn__primary" disabled>确认付款</button>
+            <button class="wuli-btn wuli-btn__disabled wuli-btn__danger" disabled>确认付款</button>
+            <button class="wuli-btn wuli-btn__disabled wuli-btn__warn" disabled>确认付款</button>
+        </view>
+    </view>
+
+</view>

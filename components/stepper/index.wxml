@@ -1,0 +1,10 @@
+<template name="wuli-stepper">
+    <view class="wuli-stepper {{ size === 'small' ? 'wuli-stepper__small' : '' }}">
+        <view class="wuli-stepper__minus {{ stepper <= min ? 'wuli-stepper__disabled' : '' }}" data-component-id="{{ componentId }}"
+            data-stepper="{{ stepper }}" data-disabled="{{ stepper <= min }}" bindtap="_handleWuliStepperMinus">-</view>
+        <input class="wuli-stepper__text {{ min >= max ? 'wuli-stepper__disabled' : '' }}" type="number" data-component-id="{{ componentId }}"
+            data-min="{{ min }}" data-max="{{ max }}" value="{{ stepper }}" disabled="{{ min >= max }}" bindblur="_handleWuliStepperBlur"></input>
+        <view class="wuli-stepper__plus {{ stepper >= max ? 'wuli-stepper__disabled' : '' }}" data-component-id="{{ componentId }}"
+            data-stepper="{{ stepper }}" data-disabled="{{ stepper >= max }}" bindtap="_handleWuliStepperPlus">+</view>
+    </view>
+</template>

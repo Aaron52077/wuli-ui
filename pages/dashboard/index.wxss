@@ -1,0 +1,2 @@
+@import "/components/cell/index.wxss";
+@import "/components/panel/index.wxss";

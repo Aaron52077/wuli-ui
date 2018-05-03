@@ -1,0 +1,73 @@
+@import 'common/_var';
+
+.wuli-tag {
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    line-height: 16px;
+    padding: 0 5px;
+    border-radius: 2px;
+    font-size: @--size-base - 3;
+    background: #c9c9c9;
+    text-align: center;
+    color: @--color-white;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200%;
+        height: 200%;
+        transform: scale(.5);
+        transform-origin: 0 0;
+        pointer-events: none;
+        box-sizing: border-box;
+        border: 0 solid #e5e5e5;
+        border-width: 1px;
+        border-radius: 4px;
+    }
+    &__plain {
+        color: #c9c9c9;
+        background: @--color-white;
+    }
+    &__primary {
+        color: @--color-white;
+        background-color: @--color-success;
+        &::after {
+            border-color: #4b0;
+        }
+        &.wuli-tag__plain {
+            color: #4b0;
+            background: @--color-white;
+        }
+    }
+    &__danger {
+        color: @--color-white;
+        background: @--color-danger;
+        &::after {
+            border-color: @--color-danger;
+        }
+        &.wuli-tag__plain {
+            color: @--color-danger;
+            background: @--color-white;
+        }
+    }
+    &__warn {
+        color: @--color-white;
+        background: @--color-warning;
+        &.wuli-tag--plain {
+            color: @--color-warning;
+            background: @--color-white;
+        }
+        &::after {
+            border-color: @--color-warning;
+        }
+    }
+    &__disabled {
+        color: #999!important;
+        background: #e5e5e5;
+        &::after {
+            border-color: #ccc;
+        }
+    }
+}

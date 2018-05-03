@@ -1,0 +1,34 @@
+<import src="/components/toast/index.wxml" />
+
+<view class="container">
+
+  <view class="doc-title wuli-hairline__bottom">TOAST</view>
+
+  <view class="wuli-btns" style="margin-top: 15vh;">
+    <button class="wuli-btn" bindtap="showToast">
+      显示toast
+    </button>
+
+    <button class="wuli-btn" bindtap="showIconToast">
+      显示 Icon 图标的toast
+    </button>
+
+    <button class="wuli-btn" bindtap="showImageToast">
+      自定义图片作为图标的toast
+    </button>
+
+    <button class="wuli-btn" bindtap="showLoadingToast">
+      显示 Loading toast
+    </button>
+
+    <button class="wuli-btn" bindtap="showOnlyIcon">
+      只显示图标的toast
+    </button>
+
+    <button class="wuli-btn" bindtap="showLoading">
+      显示 Loading
+    </button>
+  </view>
+</view>
+
+<template is="wuli-toast" data="{{ wuliToast }}"></template>

@@ -1,0 +1,14 @@
+<import src="/components/toptips/index.wxml" />
+
+<view class="container">
+
+  <view class="doc-title wuli-hairline__bottom">TOPTIPS</view>
+
+  <view class="wuli-btns" style="margin-top: 30vh;">
+    <button class="wuli-btn" bindtap="showTopTips">
+      显示toptips
+    </button>
+  </view>
+</view>
+
+<template is="wuli-toptips" data="{{ wuliTopTips }}"></template>

@@ -1,0 +1,14 @@
+<template name="wuli-dialog">
+    <view class="wuli-dialog {{ wuliDialog.show ? 'wuli-dialog__show' : '' }}">
+        <view class="wuli-dialog__mask"></view>
+        <view class="wuli-dialog__container">
+            <view wx:if="{{ wuliDialog.title }}" class="wuli-dialog__header">{{ wuliDialog.title }}</view>
+            <view class="wuli-dialog__content {{ wuliDialog.title ? 'wuli-dialog__content--title' : '' }}">{{ wuliDialog.content }}</view>
+            <view class="wuli-dialog__footer {{ wuliDialog.buttonsShowVertical ? 'wuli-dialog__footer--vertical' : 'wuli-dialog__footer--horizon' }}">
+                <block wx:for="{{ wuliDialog.buttons }}" wx:key="{{ item.text }}-{{ item.type }}">
+                    <button class="wuli-dialog__button wuli-btn" data-type="{{ item.type }}" catchtap="_handleWuliDialogButtonClick" style="color: {{ item.color || '#333' }}">{{ item.text }}</button>
+                </block>
+            </view>
+        </view>
+    </view>
+</template>

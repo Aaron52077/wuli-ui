@@ -1,0 +1,19 @@
+<template name="wuli-actionsheet">
+    <view class="wuli-actionsheet {{ show ? 'wuli-actionsheet__show' : '' }}">
+        <view class="wuli-actionsheet__mask" catchtap="_handleWuliActionsheetMaskClick" data-close-on-click-overlay="{{ closeOnClickOverlay }}"
+            data-component-id="{{ componentId }}"></view>
+        <view class="wuli-actionsheet__container">
+            <!-- 实际按钮显示 -->
+            <button wx:for="{{ actions }}" wx:for-index="index" wx:for-item="item" wx:key="{{ index }}-{{ item.name }}" catchtap="_handleWuliActionsheetBtnClick"
+                data-component-id="{{ componentId }}" data-index="{{ index }}" open-type="{{ item.openType }}" class="wuli-btn wuli-actionsheet__btn {{ item.loading ? 'wuli-btn__loading' : '' }} {{ item.className }}">
+                <text>{{ item.name }}</text>
+                <text wx:if="{{ item.subname }}" class="wuli-actionsheet__subname">{{ item.subname }}</text>
+            </button>
+
+            <!-- 关闭按钮 -->
+            <view wx:if="{{ cancelText }}" class="wuli-actionsheet__footer">
+                <button class="wuli-btn wuli-actionsheet__btn" catchtap="_handleWuliActionsheetCancelBtnClick" data-component-id="{{ componentId }}">{{ cancelText }}</button>
+            </view>
+        </view>
+    </view>
+</template>

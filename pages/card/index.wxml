@@ -1,0 +1,29 @@
+<view class="container">
+    <view class="doc-title wuli-hairline__bottom">CARD</view>
+    <view class="wuli-panel">
+        <view class="wuli-card">
+            <view class="wuli-card__thumb">
+                <image class="wuli-card__img" src="https://img.yzcdn.cn/upload_files/2016/11/25/FpqPXlrMRjKwJs8VdTu3ZDJCj4j5.jpeg?imageView2/2/w/200/h/200/q/90/format/jpeg"
+                    mode="aspectFit"></image>
+            </view>
+            <view class="wuli-card__detail">
+                <view class="wuli-card__detail-row">
+                    <view class="wuli-card__right-col">¥ 999.99</view>
+                    <view class="wuli-card__left-col wuli-ellipsis--l2">
+                        红烧牛肉【虚拟商品】【有库存】【有sku】
+                    </view>
+                </view>
+                <view class="wuli-card__detail-row wuli-gray-darker">
+                    <view class="wuli-card__right-col">x2</view>
+                    <view class="wuli-card__left-col">
+                        3000克 50%
+                    </view>
+                </view>
+
+                <view class="wuli-card__detail-row wuli-gray-darker">
+                    <view class="wuli-card__left-col wuli-red">已发货</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,15 @@
+<import src="/components/actionsheet/index.wxml" />
+
+<view class="container">
+
+    <view class="doc-title wuli-hairline__bottom">ACTIONSHEET</view>
+
+    <view class="wuli-btns" style="margin-top: 30vh;">
+        <button class="wuli-btn" bindtap="toggleActionsheet">
+            Actionsheet
+        </button>
+    </view>
+
+    <template is="wuli-actionsheet" data="{{ ...baseActionsheet }}"></template>
+
+</view>

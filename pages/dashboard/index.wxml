@@ -1,0 +1,13 @@
+<view class="container">
+
+  <block wx:for="{{ list }}" wx:for-item="group" wx:key="title">
+    <view class="wuli-panel-title">{{ group.title }}</view>
+    <view class="wuli-panel">
+      <navigator wx:for="{{ group.content }}" wx:key="name" class="wuli-cell wuli-cell__access" url="{{ item.path }}">
+        <view class="wuli-cell__bd">{{ item.name }}</view>
+        <view class="wuli-cell__ft"></view>
+      </navigator>
+    </view>
+  </block>
+  
+</view>

@@ -1,0 +1,30 @@
+<view class="container">
+
+  <view class="doc-title wuli-hairline__bottom">Tag</view>
+
+  <view class="wuli-panel">
+    <view class="wuli-cell wuli-cell__last-child">
+      <view class="wuli-tag">灰色</view>
+      <view class="wuli-tag wuli-tag__danger">红色</view>
+      <view class="wuli-tag wuli-tag__disabled">不可用</view>
+    </view>
+  </view>
+  <view class="wuli-panel">
+    <view class="wuli-cell wuli-cell__last-child">
+      <view class="wuli-tag wuli-tag__danger">会员折扣</view>
+      <view class="wuli-tag wuli-tag__warn">返现</view>
+      <view class="wuli-tag wuli-tag__primary">返现</view>
+      <view class="wuli-tag wuli-tag__primary wuli-tag__disabled">不可用</view>
+    </view>
+  </view>
+
+    <view class="wuli-panel">
+    <view class="wuli-cell wuli-cell__last-child">
+      <view class="wuli-tag wuli-tag__plain">灰色</view>
+      <view class="wuli-tag wuli-tag__danger wuli-tag__plain">会员折扣</view>
+      <view class="wuli-tag wuli-tag__warn wuli-tag__plain">返现</view>
+      <view class="wuli-tag wuli-tag__primary wuli-tag__plain">返现</view>
+      <view class="wuli-tag wuli-tag__primary wuli-tag__plain wuli-tag__disabled">返现不可用</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,36 @@
+<import src="/components/select/index.wxml" />
+<import src="/components/toptips/index.wxml" />
+
+<view class="container">
+
+    <view class="doc-title wuli-hairline__bottom">SELECT</view>
+
+    <view class="wuli-panel-title">基础用法</view>
+    <view class="wuli-panel">
+        <view>
+            <template is="wuli-select" data="{{ items, checkedValue: checked.base, componentId: 'base' }}"></template>
+        </view>
+    </view>
+
+    <view class="wuli-panel-title">自定义高亮颜色</view>
+    <view class="wuli-panel">
+        <view>
+            <template is="wuli-select" data="{{ items, checkedValue: checked.color, activeColor, componentId: 'color' }}"></template>
+        </view>
+    </view>
+
+    <view class="wuli-panel-title">Form 表单中的select应用</view>
+    <form bindsubmit="formSubmit">
+        <view class="wuli-panel">
+            <view>
+                <template is="wuli-select" data="{{ items, checkedValue: checked.form, name: 'formtest', componentId: 'form' }}"></template>
+            </view>
+        </view>
+
+        <view class="wuli-btns">
+            <button class="wuli-btn wuli-btn__primary" formType="submit">提交数据</button>
+        </view>
+    </form>
+</view>
+
+<template is="wuli-toptips" data="{{ wuliTopTips }}"></template>

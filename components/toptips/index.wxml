@@ -1,0 +1,3 @@
+<template name="wuli-toptips">
+  <view class="wuli-toptips {{ wuliTopTips.show ? 'wuli-toptips__show' : '' }}">{{ wuliTopTips.content }}</view>
+</template>

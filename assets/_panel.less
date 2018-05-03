@@ -1,0 +1,36 @@
+@import 'common/_var';
+@import 'common/_mixins';
+
+.wuli-panel {
+    position: relative;
+    background: #fff;
+    margin-top: 10px;
+    overflow: hidden;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200%;
+        height: 200%;
+        transform: scale(.5);
+        transform-origin: 0 0;
+        pointer-events: none;
+        box-sizing: border-box;
+        border: 0 solid #e5e5e5;
+        border-top-width: 1px;
+        border-bottom-width: 1px;
+    }
+    &-title {
+        font-size: @--size-base;
+        line-height: 1;
+        color: #999;
+        padding: 20px 15px 0 15px;
+    }
+    &__without-top {
+        margin-top: 0;
+    }
+    &__without-border::after {
+        border: 0 none;
+    }
+}

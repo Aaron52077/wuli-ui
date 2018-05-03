@@ -1,0 +1,6 @@
+
+@import "/components/tag/index.wxss";
+
+.wuli-tag + .wuli-tag {
+  margin-left: 10px;
+}

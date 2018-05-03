@@ -1,0 +1,17 @@
+<import src="/components/capsule/index.wxml" />
+<view class="container">
+    <view class="doc-title wuli-hairline__bottom">CAPSULE</view>
+    <view class="wuli-panel-title">基本用法</view>
+    <view class="wuli-panel">
+        <view class="wuli-cell wuli-cell__last-child">
+            <template is="capsule" data="{{ leftText: '1折', rightText: '限购一份'}}" />
+            <template is="capsule" data="{{ leftText: '1折', rightText: '限购一份', type: 'danger' }}" />
+        </view>
+    </view>
+    <view class="wuli-panel-title">自定义颜色</view>
+    <view class="wuli-panel">
+        <view class="wuli-cell wuli-cell__last-child">
+            <template is="capsule" data="{{ leftText: '1折', rightText: '限购一份', color: '#38f' }}" />
+        </view>
+    </view>
+</view>

@@ -1,0 +1,74 @@
+<view class="container">
+
+  <view class="doc-title wuli-hairline__bottom">POPUP</view>
+
+  <view class="wuli-btns" style="margin-top: 30vh;">
+    <button class="wuli-btn" bindtap="togglePopup">
+      弹出popup
+    </button>
+    <button class="wuli-btn" bindtap="toggleTopPopup">
+      从顶部弹出popup
+    </button>
+    <button class="wuli-btn" bindtap="toggleBottomPopup">
+      从底部弹出popup
+    </button>
+    <button class="wuli-btn" bindtap="toggleLeftPopup">
+      从左边弹出popup
+    </button>
+    <button class="wuli-btn" bindtap="toggleRightPopup">
+      从右边弹出popup
+    </button>
+  </view>
+
+  <view class="wuli-popup {{ showPopup ? 'wuli-popup__show' : ''}}">
+    <view class="wuli-popup__mask" bindtap="togglePopup"></view>
+    <view class="wuli-popup__container popup-example--center">
+      <view class="wuli-btns">
+        <button class="wuli-btn" bindtap="togglePopup">
+          关闭 popup
+        </button>
+      </view>
+    </view>
+  </view>
+
+  <view class="popup-example--left wuli-popup wuli-popup__left {{ showLeftPopup ? 'wuli-popup__show' : ''}}">
+    <view class="wuli-popup__mask" bindtap="toggleLeftPopup"></view>
+    <view class="wuli-popup__container">
+      <view class="wuli-btns">
+        <button class="wuli-btn" catchtap="toggleLeftPopup">
+          关闭 popup
+        </button>
+      </view>
+    </view>
+  </view>
+
+  <view class="popup-example--right wuli-popup wuli-popup__right {{ showRightPopup ? 'wuli-popup__show' : ''}}">
+    <view class="wuli-popup__mask" catchtap="toggleRightPopup"></view>
+    <view class="wuli-popup__container">
+      <view class="wuli-btns">
+        <button class="wuli-btn" catchtap="toggleRightPopup">
+          关闭 popup
+        </button>
+      </view>
+    </view>
+  </view>
+
+  <view class="popup-example--top wuli-popup wuli-popup__top {{ showTopPopup ? 'wuli-popup__show' : ''}}">
+    <view class="wuli-popup__mask" catchtap="toggleTopPopup"></view>
+    <view class="wuli-popup__container">
+      内容
+    </view>
+  </view>
+
+  <view class="popup-example--bottom wuli-popup wuli-popup__bottom {{ showBottomPopup ? 'wuli-popup__show' : ''}}">
+    <view class="wuli-popup__mask" catchtap="toggleBottomPopup"></view>
+    <view class="wuli-popup__container">
+      <view class="wuli-btns">
+        <button class="wuli-btn" catchtap="toggleBottomPopup">
+          关闭 popup
+        </button>
+      </view>
+    </view>
+  </view>
+
+</view>

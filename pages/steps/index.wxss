@@ -1,0 +1,8 @@
+@import "/components/steps/index.wxss";
+
+.my-class {
+  padding: 10px;
+}
+.my-class .wuli-steps__step--done {
+  color: #f44;
+}

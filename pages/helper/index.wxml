@@ -1,0 +1,74 @@
+<view class="container">
+
+    <view class="wuli-panel">
+        <view class="wuli-cell">
+            <view class="wuli-cell__bd">
+                <view class="wuli-pull-right">wuli-pull-right: 往右靠</view>
+            </view>
+        </view>
+
+        <view class="wuli-cell">
+            <view class="wuli-cell__bd">
+                <view class="wuli-text-deleted">wuli-text-deleted：被删除的效果</view>
+            </view>
+        </view>
+
+        <view class="wuli-cell">
+            <view class="wuli-cell__bd">
+                <view>
+                    <view class="wuli-font-12">wuli-font-12：字号12</view>
+                    <view class="wuli-font-12 wuli-font-bold">wuli-font-bold：再来个加粗</view>
+                </view>
+            </view>
+        </view>
+
+        <view class="wuli-cell">
+            <view class="wuli-cell__bd">
+                <view>
+                    <view class="wuli-font-16">wuli-font-16：字号16</view>
+                    <view class="wuli-font-16 wuli-font-bold">wuli-font-bold：再来个加粗</view>
+                </view>
+            </view>
+        </view>
+
+        <view class="wuli-cell">
+            <view class="wuli-cell__bd">
+                <view class="">
+                    <view>字体颜色</view>
+                    <view class="wuli-red">wuli-red: 红色</view>
+                    <view class="wuli-gray">wuli-gray: 灰色</view>
+                    <view class="wuli-gray-dark">wuli-gray-dark: 再灰一点点</view>
+                    <view class="wuli-gray-darker">wuli-gray-darker: 更深的灰色</view>
+                    <view class="wuli-black">wuli-black: 黑色</view>
+                    <view class="wuli-blue">wuli-blue: 蓝色</view>
+                    <view class="wuli-green">wuli-green: 绿色</view>
+                </view>
+            </view>
+        </view>
+
+        <view class="wuli-cell">
+            <view class="wuli-cell__bd">
+                <view>wuli-arrow：箭头</view>
+                <view class="wuli-arrow"></view>
+            </view>
+        </view>
+
+        <view class="wuli-cell">
+            <view class="wuli-cell__bd">
+                <view class="wuli-ellipsis" style="width: 300px;">
+                    wuli-ellipsis：单行点点点 ->我是占位的字符我是占位的字符我是占位的字符我是占位的字符我是占位的字符我是占位的字符
+                </view>
+            </view>
+        </view>
+
+        <view class="wuli-cell wuli-cell__last-child">
+            <view class="wuli-cell__bd">
+                <view class="wuli-ellipsis--l2">
+                    wuli-ellipsis--l2：单行点点点 ->我是占位的字符我是占位的字符我是占位的字符我是占位的字符我是占位的字符我是占位的字符
+                </view>
+            </view>
+        </view>
+
+    </view>
+
+</view>

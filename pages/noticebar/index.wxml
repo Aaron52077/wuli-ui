@@ -1,0 +1,21 @@
+<import src="/components/noticebar/index.wxml" />
+<view class="container">
+
+    <view class="doc-title wuli-hairline__bottom">NOTICEBAR</view>
+
+    <view class="wuli-panel-title">滚动通告栏</view>
+    <view class="wuli-panel">
+        <template is="wuli-noticebar" data="{{ ...movable, componentId: 'movable'  }}"></template>
+    </view>
+
+    <view class="wuli-panel-title">静止通告栏1</view>
+    <view class="wuli-panel">
+        <template is="wuli-noticebar" data="{{ ...static1, componentId: 'static1'  }}"></template>
+    </view>
+
+    <view class="wuli-panel-title">静止通告栏2</view>
+    <view class="wuli-panel">
+        <template is="wuli-noticebar" data="{{ ...static2, componentId: 'static2'  }}"></template>
+    </view>
+
+</view>

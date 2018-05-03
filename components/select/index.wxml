@@ -1,0 +1,43 @@
+<template name="wuli-select">
+  <radio-group
+    class="wuli-select__list"
+    name="{{ name || componentId || '' }}"
+    bindchange="_handleWuliSelectChange"
+    data-component-id="{{ componentId }}"
+  >
+    <label wx:for="{{ items }}" wx:key="value">
+      <view class="wuli-cell">
+        <radio class="wuli-select__radio" value="{{ item.value }}" checked="{{ item.value === checkedValue }}"/>
+        <view
+          class="wuli-cell__bd"
+          style="{{ parse.getItemStyle(item, checkedValue, activeColor) }}"
+        >{{ item.name }}</view>
+        <view wx:if="{{ item.value === checkedValue }}" class="wuli-cell__ft">
+          <icon type="success_no_circle" color="{{ parse.getColor(activeColor) }}" size="14"></icon>
+        </view>
+      </view>
+    </label>
+  </radio-group>
+</template>
+
+<wxs module="parse">
+function getColor(color) {
+  color = color || '#ff4444'
+  return color;
+}
+
+module.exports = {
+  getColor: getColor,
+  getItemStyle: function(item, checkedValue, activeColor) {
+    var padding = item.padding * 10;
+    var style = 'padding-left: ' + padding + 'px;';
+
+    // 如果为选中状态，则高亮
+    if (item.value === checkedValue) {
+      style += 'color: ' + getColor(activeColor);
+    }
+
+    return style;
+  }
+};
+</wxs>

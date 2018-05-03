@@ -1,0 +1,8 @@
+<import src="/components/loadmore/index.wxml" />
+<view class="container">
+    <view class="doc-title wuli-hairline--bottom">LOADMORE</view>
+    <!-- use 用法 -->
+    <template is="wuli-loadmore" data="{{ loading: true }}" />
+    <template is="wuli-loadmore" data="{{ nodata: true }}" />
+    <template is="wuli-loadmore" data="{{ nomore: true }}" />
+</view>

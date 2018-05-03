@@ -1,0 +1,63 @@
+@import 'common/_var';
+
+.wuli-actionsheet {
+    background-color: #f8f8f8;
+    &__mask {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 10;
+        background: rgba(0, 0, 0, .7);
+        display: none;
+    }
+    &__container {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #f8f8f8;
+        transform: translate3d(0, 50%, 0);
+        transform-origin: center;
+        transition: all .2s ease;
+        z-index: 11;
+        opacity: 0;
+        visibility: hidden;
+    }
+    &__btn.wuli-btn {
+        height: 50px;
+        line-height: 50px;
+        margin-bottom: 0;
+        &::after {
+            border-width: 0;
+            border-bottom-width: 1px;
+        }
+        &:last-child::after {
+            border-bottom-width: 0;
+        }
+    }
+    &__subname {
+        margin-left: 2px;
+        font-size: @--size-base - 2;
+        color: #666;
+    }
+    &__footer {
+        margin-top: 10px;
+    }
+    &__btn.wuli-btn__loading {
+        .wuli-actionsheet__subname {
+            color: transparent;
+        }
+    }
+    &__show {
+        .wuli-actionsheet__container {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+            visibility: visible;
+        }
+        .wuli-actionsheet__mask {
+            display: block;
+        }
+    }
+}

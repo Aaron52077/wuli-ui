@@ -1,0 +1,24 @@
+<template name="wuli-loadmore">
+
+    <block wx:if="{{nomore}}">
+        <view class="wuli-loadmore wuli-loadmore__nomore">
+            <view class="wuli-loadmore__tips">
+                <view class="wuli-loadmore__dot"></view>
+            </view>
+        </view>
+    </block>
+
+    <block wx:elif="{{nodata}}">
+        <view class="wuli-loadmore wuli-loadmore__nodata">
+            <view class="wuli-loadmore__tips">{{ nodata_str || '暂无数据' }}</view>
+        </view>
+    </block>
+
+    <block wx:elif="{{loading}}">
+        <view class="wuli-loadmore">
+            <view class="wuli-loading"></view>
+            <view class="wuli-loadmore__tips">加载中...</view>
+        </view>
+    </block>
+
+</template>

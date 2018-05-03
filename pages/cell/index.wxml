@@ -1,0 +1,118 @@
+<!-- <import src="/components/switch/index.wxml" /> -->
+
+<view class="container">
+
+  <view class="doc-title wuli-hairline--bottom">CELL</view>
+
+  <view class="wuli-panel">
+    <view class="wuli-cell">
+      <view class="wuli-cell__bd">单行列表</view>
+    </view>
+  </view>
+
+  <view class="wuli-panel">
+    <view class="wuli-cell">
+      <view class="wuli-cell__bd">单行列表</view>
+      <view class="wuli-cell__ft">详细信息</view>
+    </view>
+  </view>
+
+  <view class="wuli-panel">
+    <view class="wuli-cell">
+      <view class="wuli-cell__icon wuli-icon wuli-icon-checked" style="color:#38f;"></view>
+      <view class="wuli-cell__bd">单行列表</view>
+      <view class="wuli-cell__ft">详细信息</view>
+    </view>
+  </view>
+
+  <view class="wuli-panel">
+    <view class="wuli-cell">
+      <view class="wuli-cell__bd">
+        <view class="wuli-cell__text">单行列表</view>
+        <view class="wuli-cell__desc">附加描述</view>
+      </view>
+      <view class="wuli-cell__ft">详细信息</view>
+    </view>
+  </view>
+
+  <view class="wuli-panel">
+    <view class="wuli-cell wuli-cell__access">
+      <view class="wuli-cell__bd">单行列表</view>
+      <view class="wuli-cell__ft"></view>
+    </view>
+  </view>
+
+  <view class="wuli-panel">
+    <view class="wuli-cell wuli-cell--switch">
+      <view class="wuli-cell__bd">开关</view>
+      <view class="wuli-cell__ft">
+        <!-- <template is="wuli-switch" data="{{ checked }}"/> -->
+      </view>
+    </view>
+  </view>
+
+  <view class="wuli-panel">
+    <view class="wuli-cell wuli-cell__access">
+      <view class="wuli-cell__bd">单行列表</view>
+      <view class="wuli-cell__ft">详细信息</view>
+    </view>
+  </view>
+
+  <view class="wuli-panel">
+    <view class="wuli-cell">
+      <view class="wuli-cell__bd">多行列表</view>
+    </view>
+    <view class="wuli-cell">
+      <view class="wuli-cell__bd">多行列表</view>
+    </view>
+    <view class="wuli-cell">
+      <view class="wuli-cell__bd">多行列表</view>
+    </view>
+  </view>
+
+  <view class="wuli-panel">
+    <view class="wuli-cell">
+      <view class="wuli-cell__bd">多行列表</view>
+      <view class="wuli-cell__ft">详细信息</view>
+    </view>
+    <view class="wuli-cell">
+      <view class="wuli-cell__bd">多行列表</view>
+      <view class="wuli-cell__ft">详细信息</view>
+    </view>
+    <view class="wuli-cell">
+      <view class="wuli-cell__bd">多行列表</view>
+      <view class="wuli-cell__ft">详细信息</view>
+    </view>
+  </view>
+
+  <view class="wuli-panel">
+    <view class="wuli-cell wuli-cell__access">
+      <view class="wuli-cell__bd">多行列表</view>
+      <view class="wuli-cell__ft"></view>
+    </view>
+    <view class="wuli-cell wuli-cell__access">
+      <view class="wuli-cell__bd">多行列表</view>
+      <view class="wuli-cell__ft"></view>
+    </view>
+    <view class="wuli-cell wuli-cell__access">
+      <view class="wuli-cell__bd">多行列表</view>
+      <view class="wuli-cell__ft"></view>
+    </view>
+  </view>
+
+  <view class="wuli-panel">
+    <view class="wuli-cell wuli-cell__access">
+      <view class="wuli-cell__bd">多行列表</view>
+      <view class="wuli-cell__ft">详细信息</view>
+    </view>
+    <view class="wuli-cell wuli-cell__access">
+      <view class="wuli-cell__bd">多行列表</view>
+      <view class="wuli-cell__ft">详细信息</view>
+    </view>
+    <view class="wuli-cell wuli-cell__access">
+      <view class="wuli-cell__bd">多行列表</view>
+      <view class="wuli-cell__ft">详细信息</view>
+    </view>
+  </view>
+
+</view>

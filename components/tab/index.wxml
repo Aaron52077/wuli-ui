@@ -1,0 +1,37 @@
+<template name="wuli-tab">
+  <view class="wuli-tab">
+    <block wx:if="{{ tab.scroll || scroll }}">
+      <scroll-view
+        class="wuli-tab__bd wuli-tab__bd--scroll {{ fixed ? 'wuli-tab__bd--fixed' : '' }}"
+        scroll-x="true"
+        style="height: {{ tab.height || height ? ((tab.height || height) + 'px') : 'auto' }}"
+      >
+        <template
+          is="wuli-tab-list"
+          data="{{ list: tab.list || list, selectedId: tab.selectedId || selectedId, componentId }}">
+        </template>
+      </scroll-view>
+    </block>
+    <block wx:else>
+      <view class="wuli-tab__bd {{ fixed ? 'wuli-tab__bd--fixed' : '' }}">
+        <template
+          is="wuli-tab-list"
+          data="{{ list: tab.list || list, selectedId: tab.selectedId || selectedId, componentId }}">
+        </template>
+      </view>
+    </block>
+  </view>
+</template>
+
+<template name="wuli-tab-list">
+  <view
+    wx:for="{{ list }}"
+    wx:key="id"
+    class="wuli-tab__item {{ selectedId == item.id ? 'wuli-tab__item--selected' : '' }}"
+    data-component-id="{{ componentId }}"
+    data-item-id="{{ item.id }}"
+    bindtap="_handleWuliTabChange"
+  >
+    <view class="wuli-tab__title">{{ item.title }}</view>
+  </view>
+</template>

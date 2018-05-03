@@ -1,0 +1,4 @@
+@import "/components/capsule/index.wxss";
+.wuli-capsule + .wuli-capsule {
+  margin-left: 10px;
+}

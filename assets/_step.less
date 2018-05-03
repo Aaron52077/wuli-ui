@@ -1,0 +1,199 @@
+@import 'common/_var';
+
+// 横向
+.wuli-steps__horizontal {
+    &.wuli-steps--5 {
+        .wuli-steps__step {
+            width: 25%;
+        }
+    }
+    &.wuli-steps--4 {
+        .wuli-steps__step {
+            width: 33%;
+        }
+    }
+    &.wuli-steps--3 {
+        .wuli-steps__step {
+            width: 50%;
+        }
+    }
+    .wuli-steps__step {
+        position: relative;
+        float: left;
+        padding-bottom: 25px;
+        color: #b1b1b1;
+    }
+    .wuli-steps__title {
+        transform: translateX(-50%);
+        font-size: @--size-base - 4;
+        text-align: center;
+    }
+    .wuli-steps__icons {
+        position: absolute;
+        top: 30px;
+        left: -10px;
+        padding: 0 8px;
+        background-color: #fff;
+        z-index: 10;
+    }
+    .wuli-steps__circle {
+        display: block;
+        position: relative;
+        width: 5px;
+        height: 5px;
+        background-color: #e5e5e5;
+        border-radius: 50%;
+    }
+    .wuli-steps__line {
+        position: absolute;
+        left: 0;
+        top: 32px;
+        width: 100%;
+        height: 1px;
+        background-color: #e5e5e5;
+    }
+    .wuli-steps__step--done {
+        color: #333;
+        .wuli-steps__line {
+            background-color: #06bf04;
+        }
+        .wuli-steps__circle {
+            width: 5px;
+            height: 5px;
+            background-color: #09bb07;
+        }
+    }
+    .wuli-steps__step--cur {
+        .wuli-steps__icons {
+            top: 25px;
+            left: -14px;
+        }
+        .wuli-steps__circle {
+            width: 13px;
+            height: 13px;
+            background-image: url(https://b.yzcdn.cn/v2/image/wap/success_small@2x.png);
+            background-size: 13px 13px;
+        }
+        .wuli-steps__line {
+            background-color: #e5e5e5;
+        }
+    }
+    .wuli-steps__step--first-child {
+        .wuli-steps__title {
+            margin-left: 0;
+            transform: none;
+            text-align: left;
+        }
+        .wuli-steps__icons {
+            left: -7px;
+        }
+    }
+    .wuli-steps__step--last-child {
+        position: absolute;
+        right: 10px;
+        text-align: right;
+        .wuli-steps__title {
+            transform: none;
+            text-align: right;
+        }
+        .wuli-steps__icons {
+            left: auto;
+            right: 0;
+        }
+        .wuli-steps__line {
+            display: none;
+        }
+    }
+    .wuli-steps__step--db-title {
+        min-height: 29px;
+        .wuli-steps__line {
+            top: 45px;
+        }
+        .wuli-steps__icons {
+            top: 43px;
+        }
+        &.wuli-steps__step--cur .wuli-steps__icons {
+            top: 39px;
+        }
+    }
+} 
+
+// 纵向
+.wuli-steps__vertical {
+    color: @--color-info;
+    font-size: @--size-base;
+    .wuli-steps__step {
+        position: relative;
+        padding: 15px 0;
+    }
+    .wuli-steps__step--done {
+        color: #4b0;
+    }
+    .wuli-steps__line {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 7px;
+        width: 1px;
+        background-color: #e5e5e5;
+    }
+    .wuli-steps__title {
+        display: inline-block;
+        line-height: 20px;
+        padding-left: 27px;
+    }
+    .wuli-steps__title--desc {
+        padding-left: 3px;
+    }
+    .wuli-steps__icons {
+        position: absolute;
+        left: 7px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        padding: 3px 0;
+        background-color: @--color-white;
+    }
+    .wuli-steps__circle {
+        width: 5px;
+        height: 5px;
+        background-color: #cacaca;
+        border-radius: 10px;
+    }
+    .wuli-steps__step--done .wuli-steps__circle {
+        width: 5px;
+        height: 5px;
+        background-color: #09bb07;
+    }
+    .wuli-steps__step--cur .wuli-steps__circle {
+        width: 13px;
+        height: 13px;
+        background: transparent url(https://b.yzcdn.cn/v2/image/wap/success_small@2x.png);
+        background-size: 13px 13px;
+        border-radius: 0;
+    }
+    .wuli-steps__icon--active {
+        width: 13px;
+        height: 13px;
+    }
+    .wuli-steps__step--first-child .wuli-steps__title::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 50%;
+        left: 7px;
+        width: 1px;
+        background-color: #fff;
+        z-index: 1;
+    }
+    .wuli-steps__step--last-child .wuli-steps__title::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        bottom: 0;
+        left: 7px;
+        width: 1px;
+        background-color: #fff;
+        z-index: 1;
+    }
+}

@@ -1,0 +1,42 @@
+@import 'common/_var';
+@import 'common/_mixins';
+
+.wuli-capsule {
+    display: inline-block;
+    font-size: @--size-base - 2;
+    vertical-align: middle;
+    line-height: 19px;
+    transform: scale(.83);
+    &__left,
+    &__right {
+        display: inline-block;
+        line-height: 17px;
+        height: 19px;
+        vertical-align: middle;
+        box-sizing: border-box;
+    }
+    &__left {
+        padding: 0 2px;
+        color: #fff;
+        background: #999;
+        border-radius: 2px 0 0 2px;
+        border: 2rpx solid #999;
+    }
+    &__right {
+        padding: 0 5px;
+        color: #999;
+        border-radius: 0 2px 2px 0;
+        border: 2rpx solid #999;
+    }
+}
+
+.wuli-capsule__danger .wuli-capsule__left {
+    color: #fff;
+    background: #f24544;
+    border-color: #f24544;
+}
+
+.wuli-capsule__danger .wuli-capsule__right {
+    color: #f24544;
+    border-color: #f24544;
+}
