@@ -56,7 +56,7 @@ module.exports = {
 
     return new Promise((resolve, reject) => {
       this.setData({
-        WuliDialog: {
+        wuliDialog: {
           show: true,
           showCustomBtns,
           buttons,
@@ -82,16 +82,16 @@ module.exports = {
     const { dataset = {} } = currentTarget;
 
     // 获取当次弹出框的信息
-    const WuliDialogData = this.data.WuliDialog || {};
-    const { resolve = _f, reject = _f } = WuliDialogData;
+    const wuliDialogData = this.data.wuliDialog || {};
+    const { resolve = _f, reject = _f } = wuliDialogData;
 
-    // 重置 WuliDialog 里的内容
+    // 重置 wuliDialog 里的内容
     this.setData({
-      WuliDialog: { show: false }
+      wuliDialog: { show: false }
     });
 
     // 自定义按钮，全部 resolve 形式返回，根据 type 区分点击按钮
-    if (WuliDialogData.showCustomBtns) {
+    if (wuliDialogData.showCustomBtns) {
       resolve({
         type: dataset.type
       });

@@ -37,13 +37,13 @@ Page(extend({}, Actionsheet, {
         });
     },
 
-    handlewuliActionsheetCancel({ componentId }) {
+    handleWuliActionsheetCancel({ componentId }) {
         this.setData({
             [`${componentId}.show`]: false
         });
     },
 
-    handlewuliActionsheetClick({ componentId, index }) {
+    handleWuliActionsheetClick({ componentId, index }) {
         console.log(`item index ${index} clicked`);
 
         // 如果是分享按钮被点击, 不处理关闭

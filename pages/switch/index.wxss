@@ -1,6 +1,8 @@
-.zan-panel {
+@import "/components/switch/index.wxss";
+
+.wuli-panel {
   padding: 10px;
 }
-.zan-switch {
+.wuli-switch {
   margin-right: 8px;
 }

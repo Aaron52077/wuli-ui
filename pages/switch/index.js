@@ -1,6 +1,6 @@
-var Zan = require('../../components/index');
+var Wuli = require('../../components/index');
 
-Page(Object.assign({}, Zan.Switch, {
+Page(Object.assign({}, Wuli.Switch, {
   data: {
     sync: {
       checked: false
@@ -11,7 +11,7 @@ Page(Object.assign({}, Zan.Switch, {
     },
   },
 
-  handleZanSwitchChange(e) {
+  handleWuliSwitchChange(e) {
     var componentId = e.componentId;
     var checked = e.checked;
 

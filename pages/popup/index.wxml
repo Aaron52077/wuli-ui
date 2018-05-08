@@ -23,33 +23,27 @@
   <view class="wuli-popup {{ showPopup ? 'wuli-popup__show' : ''}}">
     <view class="wuli-popup__mask" bindtap="togglePopup"></view>
     <view class="wuli-popup__container popup-example--center">
-      <view class="wuli-btns">
         <button class="wuli-btn" bindtap="togglePopup">
           关闭 popup
         </button>
-      </view>
     </view>
   </view>
 
   <view class="popup-example--left wuli-popup wuli-popup__left {{ showLeftPopup ? 'wuli-popup__show' : ''}}">
     <view class="wuli-popup__mask" bindtap="toggleLeftPopup"></view>
     <view class="wuli-popup__container">
-      <view class="wuli-btns">
         <button class="wuli-btn" catchtap="toggleLeftPopup">
           关闭 popup
         </button>
-      </view>
     </view>
   </view>
 
   <view class="popup-example--right wuli-popup wuli-popup__right {{ showRightPopup ? 'wuli-popup__show' : ''}}">
     <view class="wuli-popup__mask" catchtap="toggleRightPopup"></view>
     <view class="wuli-popup__container">
-      <view class="wuli-btns">
         <button class="wuli-btn" catchtap="toggleRightPopup">
           关闭 popup
         </button>
-      </view>
     </view>
   </view>
 
@@ -63,11 +57,9 @@
   <view class="popup-example--bottom wuli-popup wuli-popup__bottom {{ showBottomPopup ? 'wuli-popup__show' : ''}}">
     <view class="wuli-popup__mask" catchtap="toggleBottomPopup"></view>
     <view class="wuli-popup__container">
-      <view class="wuli-btns">
         <button class="wuli-btn" catchtap="toggleBottomPopup">
           关闭 popup
         </button>
-      </view>
     </view>
   </view>
 
