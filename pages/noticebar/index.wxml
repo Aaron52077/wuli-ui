@@ -2,7 +2,7 @@
 <view class="container">
 
     <view class="doc-title wuli-hairline__bottom">NOTICEBAR</view>
-
+    <view class="doc-description">通告栏</view>
     <view class="wuli-panel-title">滚动通告栏</view>
     <view class="wuli-panel">
         <template is="wuli-noticebar" data="{{ ...movable, componentId: 'movable'  }}"></template>

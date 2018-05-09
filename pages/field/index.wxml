@@ -2,7 +2,7 @@
 
 <view class="container">
     <view class="doc-title wuli-hairline__bottom">Field</view>
-
+    <view class="doc-description">输入框</view>
     <!-- Field 基础用法 -->
     <view class="wuli-panel-title">基础用法</view>
     <view class="wuli-panel">

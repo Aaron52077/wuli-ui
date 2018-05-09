@@ -3,7 +3,7 @@
 <view class="container">
 
   <view class="doc-title wuli-hairline__bottom">TOAST</view>
-
+  <view class="doc-description">提示</view>
   <view class="wuli-btns" style="margin-top: 15vh;">
     <button class="wuli-btn" bindtap="showToast">
       显示toast

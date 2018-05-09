@@ -1,6 +1,6 @@
-const Wuli = require('../../components/index');
+import { Toast } from '../../components/index';
 
-Page(Object.assign({}, Wuli.Toast, {
+Page(Object.assign({}, Toast, {
     data: {},
 
     showToast() {

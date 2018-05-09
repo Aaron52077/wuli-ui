@@ -1,16 +1,37 @@
-exports.Actionsheet = require('./actionsheet/index');
-exports.Dialog = require('./dialog/index');
-exports.Field = require('./field/index');
-exports.NoticeBar = require('./noticebar/index');
-exports.Select = require('./select/index');
-exports.Stepper = require('./stepper/index');
-exports.Switch = require('./switch/index');
-exports.Tab = require('./tab/index');
-exports.Toast = require('./toast/index');
-exports.TopTips = require('./toptips/index');
+// 整理学习zanUI和wux框架目录结构
+
+import Actionsheet from './actionsheet/index'
+import Field from './field/index'
+import NoticeBar from './noticebar/index'
+import Select from './select/index'
+import Stepper from './stepper/index'
+import Switch from './switch/index'
+import Tab from './tab/index'
+import Toast from './toast/index'
+import TopTips from './toptips/index'
+import Dialog from './dialog/index'
+import Barcode from './barcode/barcode'
+import Button from './button/button'
+import { extend } from './common/helper';
 
 // 兼容老版本，在下次大版本发布时会被移除
-exports.CheckLabel = require('./select/index');
+import CheckLabel from './select/index'
 
-const { extend } = require('./common/helper');
-exports.extend = extend;
+export {
+    Actionsheet,
+    Field,
+    NoticeBar,
+    Select,
+    Stepper,
+    Switch,
+    Tab,
+    Toast,
+    TopTips,
+    CheckLabel,
+    Dialog,
+    Barcode,
+    Button,
+    extend
+}
+
+

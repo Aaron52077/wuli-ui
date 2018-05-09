@@ -1,7 +1,7 @@
 <view class="container">
 
     <view class="doc-title wuli-hairline__bottom">BADGE</view>
-
+    <view class="doc-description">徽章</view>
     <view class="demo">
         <view class="demo__item">
             <view class="demo__icon wuli-badge">

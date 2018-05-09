@@ -1,7 +1,7 @@
 <view class="container">
 
   <view class="doc-title wuli-hairline__bottom">Tag</view>
-
+  <view class="doc-description">tag 标记</view>
   <view class="wuli-panel">
     <view class="wuli-cell wuli-cell__last-child">
       <view class="wuli-tag">灰色</view>

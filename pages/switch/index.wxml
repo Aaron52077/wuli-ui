@@ -3,7 +3,7 @@
 <view class="container">
 
   <view class="doc-title wuli-hairline__bottom">SWITCH</view>
-
+  <view class="doc-description">开关</view>
   <view class="wuli-panel-title">同步开关</view>
   <view class="wuli-panel">
     <template is="wuli-switch" data="{{ ...sync, componentId: 'sync' }}" />

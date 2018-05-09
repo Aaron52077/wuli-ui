@@ -1,6 +1,6 @@
 .wuli-stepper {
     color: #666;
-    > view {
+    view {
         display: inline-block;
         line-height: 20px;
         padding: 5px 0;
@@ -9,13 +9,13 @@
         box-sizing: border-box;
         vertical-align: middle;
         font-size: 12px;
-        border: 1rpx solid #999;
+        border: 1px solid #999;
     }
     .wuli-stepper__minus {
         border-right: none;
         border-radius: 2px 0 0 2px;
     }
-    &__text {
+    .wuli-stepper__text {
         border: 1rpx solid #999;
         display: inline-block;
         text-align: center;
@@ -26,16 +26,16 @@
         font-size: 12px;
         line-height: 30px;
     }
-    &___plus {
+    .wuli-stepper__plus {
         border-left: none;
         border-radius: 0 2px 2px 0;
     }
-    &__disabled {
+    .wuli-stepper__disabled {
         background: #f8f8f8;
         color: #bbb;
         border-color: #e8e8e8;
     }
-    &__small view {
+    .wuli-stepper__small view {
         min-width: 36px;
         line-height: 18px;
         .wuli-stepper__text {

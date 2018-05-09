@@ -3,7 +3,7 @@
 <view class="container">
 
   <view class="doc-title wuli-hairline__bottom">TOPTIPS</view>
-
+  <view class="doc-description">顶部提示</view>
   <view class="wuli-btns" style="margin-top: 30vh;">
     <button class="wuli-btn" bindtap="showTopTips">
       显示toptips

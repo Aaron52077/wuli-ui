@@ -1,11 +1,11 @@
 <view class="container">
 
   <view class="doc-title wuli-hairline--bottom">ICON</view>
-
+  <view class="doc-description">图标</view>
   <view class="wuli-panel">
     <view wx:for="{{ icons }}" wx:for-item="icon" class="icon-wrap" wx:key="{{index}}">
       <view class="wuli-icon {{ icon }}"  style="color: #409EFF;"></view>
-      <view class="icon-classname">icon-{{ icon }}</view>
+      <view class="icon-classname">{{ icon }}</view>
     </view>
   </view>
 </view>

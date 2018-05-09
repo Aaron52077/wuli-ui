@@ -1,7 +1,7 @@
 <view class="container">
 
   <view class="doc-title wuli-hairline--bottom">PANEL</view>
-
+  <view class="doc-description">面板</view>
   <view class="wuli-panel-title">标题</view>
   <view class="wuli-panel">
     <view style="padding: 15px;">内容</view>

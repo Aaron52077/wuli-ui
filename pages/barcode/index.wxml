@@ -1,0 +1,15 @@
+<view class="container">
+    <view class="doc-title wuli-hairline__bottom">Barcode</view>
+    <view class="doc-description">条形码</view>
+
+    <view class="wuli-panel">
+        <view class="wuli-cell wuli-field">
+            <input value="{{ value }}" placeholder="请输入13位条形码，即时输入即时生成" class="wuli-field__input wuli-cell__bd"
+                placeholder-class="wuli-field__placeholder" bindinput="bindinput" />
+        </view>
+        <view class="doc-description">提示：扫描只能识别有效的条形码</view>
+    </view>
+    <view class="wuli-panel">
+        <canvas style="width: 200px; height: 100px; margin: 30px auto;" canvas-id="barcode"></canvas>
+    </view>
+</view>

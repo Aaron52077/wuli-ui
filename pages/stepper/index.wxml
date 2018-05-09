@@ -2,8 +2,8 @@
 
 <view class="container">
 
-    <view class="doc-title wuli-hairline--bottom">Stepper</view>
-
+    <view class="doc-title wuli-hairline__bottom">Stepper</view>
+    <view class="doc-description">计数器</view>
     <view style="padding: 40px 15px">
         <template is="wuli-stepper" data="{{ ...stepper1, componentId: 'stepper1' }}" />
     </view>

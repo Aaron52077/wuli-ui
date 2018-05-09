@@ -1,0 +1,17 @@
+<import src="../../components/button/button.wxml" />
+
+<template is="ani-button" data="{{ ...button.br }}" />
+
+<view class="container">
+    <view class="doc-title wuli-hairline__bottom">Button</view>
+    <view class="doc-description">浮动按钮</view>
+
+    <view class="wuli-panel">
+        <view class="wuli-cell wuli-cell__switch">
+            <view class="wuli-cell__bd">切换状态</view>
+            <view class="wuli-cell__ft">
+                <switch bindchange="switchChange" checked="{{ opened }}" />
+            </view>
+        </view>
+    </view>
+</view>

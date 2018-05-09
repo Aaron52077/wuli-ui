@@ -1,5 +1,6 @@
 <view class="container">
     <view class="doc-title wuli-hairline__bottom">CARD</view>
+    <view class="doc-description">卡片</view>
     <view class="wuli-panel">
         <view class="wuli-card">
             <view class="wuli-card__thumb">

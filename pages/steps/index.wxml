@@ -3,7 +3,7 @@
 <view class="container">
 
     <view class="doc-title wuli-hairline__bottom">STEPS</view>
-
+    <view class="doc-description">步骤条</view>
     <view class="wuli-panel">
         <view class="wuli-cell">
             <view class="wuli-cell__bd">

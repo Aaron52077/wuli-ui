@@ -1,6 +1,7 @@
 <import src="/components/capsule/index.wxml" />
 <view class="container">
     <view class="doc-title wuli-hairline__bottom">CAPSULE</view>
+    <view class="doc-description">胶囊</view>
     <view class="wuli-panel-title">基本用法</view>
     <view class="wuli-panel">
         <view class="wuli-cell wuli-cell__last-child">

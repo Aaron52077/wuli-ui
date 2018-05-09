@@ -1,5 +1,5 @@
 <view class="container">
-
+    <view class="doc-description">辅助文字</view>
     <view class="wuli-panel">
         <view class="wuli-cell">
             <view class="wuli-cell__bd">

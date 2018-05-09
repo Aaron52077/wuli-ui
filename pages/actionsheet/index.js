@@ -1,4 +1,4 @@
-const { Actionsheet, extend } = require('../../components/index');
+import { Actionsheet, extend } from '../../components/index';
 
 Page(extend({}, Actionsheet, {
     data: {

@@ -1,7 +1,7 @@
 <view class="container">
 
     <view class="doc-title wuli-hairline__bottom">BUTTON</view>
-
+    <view class="doc-description">按钮</view>
     <view class="wuli-panel-title">普通按钮</view>
     <view class="wuli-panel">
         <view class="wuli-btns">

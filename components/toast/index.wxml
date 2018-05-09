@@ -1,31 +1,15 @@
 <template name="wuli-toast">
-  <view
-    class="wuli-toast {{ !wuliToast.title ? 'wuli-toast__notitle' : '' }}"
-    wx:if="{{ wuliToast.show }}"
-    bindtap="clearZanToast"
-  >
-    <!-- icon 展示 -->
-    <block
-      wx:if="{{ wuliToast.icon || wuliToast.image }}"
-    >
-      <view
-        wx:if="{{ wuliToast.image }}"
-        class="wuli-toast__icon wuli-toast__icon-image"
-        style="background-image: url({{ wuliToast.image }});"
-      ></view>
-      <view
-        wx:elif="{{ wuliToast.icon === 'loading' }}"
-        class="wuli-toast__icon wuli-toast__icon-loading"
-      >
-        <view class="wuli-loading"></view>
-      </view>
-      <view
-        wx:else
-        class="wuli-toast__icon wuli-icon wuli-icon-{{ wuliToast.icon }}"
-      ></view>
-    </block>
+    <view class="wuli-toast {{ !wuliToast.title ? 'wuli-toast__notitle' : '' }}" wx:if="{{ wuliToast.show }}" bindtap="clearZanToast">
+        <!-- icon 展示 -->
+        <block wx:if="{{ wuliToast.icon || wuliToast.image }}">
+            <view wx:if="{{ wuliToast.image }}" class="wuli-toast__icon wuli-toast__icon-image" style="background-image: url({{ wuliToast.image }});"></view>
+            <view wx:elif="{{ wuliToast.icon === 'loading' }}" class="wuli-toast__icon wuli-toast__icon-loading">
+                <view class="wuli-loading"></view>
+            </view>
+            <view wx:else class="wuli-toast__icon wuli-icon wuli-icon-{{ wuliToast.icon }}"></view>
+        </block>
 
-    <!-- 文案展示 -->
-    <view wx:if="{{ wuliToast.title }}">{{ wuliToast.title }}</view>
-  </view>
+        <!-- 文案展示 -->
+        <view wx:if="{{ wuliToast.title }}">{{ wuliToast.title }}</view>
+    </view>
 </template>

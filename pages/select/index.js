@@ -1,6 +1,6 @@
-var Wuli = require('../../components/index');
+import { Select } from '../../components/index';
 
-Page(Object.assign({}, Wuli.Select, Wuli.TopTips, {
+Page(Object.assign({}, Select, {
 
   data: {
     items: [
@@ -32,7 +32,6 @@ Page(Object.assign({}, Wuli.Select, Wuli.TopTips, {
   },
 
   formSubmit(event) {
-    console.log('[wuli:field:submit]', event.detail.value);
-    this.showWuliTopTips(`选中的值为${event.detail.value.formtest}`);
+    console.log('[wuli:field:submit]', event.detail.value, `选中的值为${event.detail.value.formtest}`);
   }
 }));

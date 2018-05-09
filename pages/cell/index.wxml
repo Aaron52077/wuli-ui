@@ -1,9 +1,9 @@
-<!-- <import src="/components/switch/index.wxml" /> -->
+<import src="/components/switch/index.wxml" />
 
 <view class="container">
 
   <view class="doc-title wuli-hairline--bottom">CELL</view>
-
+  <view class="doc-description">单元格</view>
   <view class="wuli-panel">
     <view class="wuli-cell">
       <view class="wuli-cell__bd">单行列表</view>
@@ -43,10 +43,10 @@
   </view>
 
   <view class="wuli-panel">
-    <view class="wuli-cell wuli-cell--switch">
+    <view class="wuli-cell wuli-cell__switch">
       <view class="wuli-cell__bd">开关</view>
       <view class="wuli-cell__ft">
-        <!-- <template is="wuli-switch" data="{{ checked }}"/> -->
+        <template is="wuli-switch" data="{{ checked }}"/>
       </view>
     </view>
   </view>

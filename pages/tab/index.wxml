@@ -3,7 +3,7 @@
 <view class="container">
 
     <view class="doc-title wuli-hairline--bottom">TAB</view>
-
+    <view class="doc-description">tab标签</view>
     <view style="margin: 20px 0">
         <template is="wuli-tab" data="{{ ...tab1, componentId: 'tab1' }}"></template>
     </view>

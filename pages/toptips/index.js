@@ -1,9 +1,9 @@
-var Wuli = require('../../components/index');
+import { TopTips } from '../../components/index';
 
-Page(Object.assign({}, Wuli.TopTips, {
-  data: {},
+Page(Object.assign({}, TopTips, {
+    data: {},
 
-  showTopTips() {
-    this.showWuliTopTips('toptips的内容');
-  }
+    showTopTips() {
+        this.showWuliTopTips('toptips的内容');
+    }
 }));

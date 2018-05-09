@@ -3,7 +3,7 @@
 <view class="container">
 
     <view class="doc-title wuli-hairline__bottom">ACTIONSHEET</view>
-
+    <view class="doc-description">上拉菜单</view>
     <view class="wuli-btns" style="margin-top: 30vh;">
         <button class="wuli-btn" bindtap="toggleActionsheet">
             Actionsheet

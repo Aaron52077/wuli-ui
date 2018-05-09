@@ -1,6 +1,6 @@
-const Wuli = require('../../components/index');
+import { Dialog } from '../../components/index';
 
-Page(Object.assign({}, Wuli.Dialog, {
+Page(Object.assign({}, Dialog, {
     toggleBaseDialog() {
       this.showWuliDialog({
         title: '弹窗',

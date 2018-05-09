@@ -1,6 +1,6 @@
-// var Wuli = require('../../compontents/index');
+import { Switch } from '../../components/index';
 
-Page({
+Page(Object.assign({}, Switch, {
   data: {
     checked: false
   },
@@ -16,4 +16,4 @@ Page({
       checked: e.checked
     });
   }
-});
+}));

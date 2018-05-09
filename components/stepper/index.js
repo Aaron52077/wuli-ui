@@ -13,7 +13,6 @@ function callback(componentId, stepper) {
   stepper = +stepper;
   var e = { componentId, stepper };
   
-
   if (this.handleWuliStepperChange) {
     this.handleWuliStepperChange(e);
   } else {

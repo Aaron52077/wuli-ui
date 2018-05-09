@@ -1,0 +1,15 @@
+<template name="ani-button">
+	<view class="wuli-popup__mask" wx:if="{{ backdrop && opened }}"></view>
+	<view class="wuli-ani-dial {{ className }} {{ animateCss }} {{ opened ? 'wuli-ani-dial--opened' : '' }}" data-opened="{{ opened }}" bindtap="{{ toggle }}" wx:if="{{ visible }}">
+		<view class="wuli-ani-dial__action" hover-class="wuli-ani-dial__action--hover">
+			<text class="wuli-ani-dial__text"></text>
+		</view>
+		<view class="wuli-ani-dial__buttons" wx:if="{{ buttons.length }}">
+			<block wx:for="{{ buttons }}" wx:key="">
+				<view class="wuli-ani-dial__button {{ item.className }}" data-index="{{ index }}" data-label="{{ item.label }}" catchtap="{{ buttonClicked }}" hover-class="wuli-ani-dial__button--hover">
+					<image class="wuli-ani-dial__icon" src="{{ item.icon }}" />
+				</view>
+			</block>
+		</view>
+	</view>
+</template>
