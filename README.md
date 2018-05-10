@@ -16,12 +16,12 @@
     * 对应的`pages`中也有与之对应的用法,请详细查考哦！ 
 
 ## 项目部分截图
-![](https://github.com/Aaron52077/wuli-ui/raw/master/static/img_01.png)\<br> 
-![](https://github.com/Aaron52077/wuli-ui/raw/master/static/img_02.png)\<br>
-![](https://github.com/Aaron52077/wuli-ui/raw/master/static/img_03.png)\<br>
-![](https://github.com/Aaron52077/wuli-ui/raw/master/static/img_04.png)\<br>
-![](https://github.com/Aaron52077/wuli-ui/raw/master/static/img_05.png)\<br>
-![](https://github.com/Aaron52077/wuli-ui/raw/master/static/img_06.png)\<br>
-![](https://github.com/Aaron52077/wuli-ui/raw/master/static/img_07.png)\<br>
-![](https://github.com/Aaron52077/wuli-ui/raw/master/static/img_08.png)\<br>
-![](https://github.com/Aaron52077/wuli-ui/raw/master/static/img_09.png)\<br> 
+![](https://github.com/Aaron52077/wuli-ui/raw/master/static/img_01.png)\ 
+![](https://github.com/Aaron52077/wuli-ui/raw/master/static/img_02.png)\
+![](https://github.com/Aaron52077/wuli-ui/raw/master/static/img_03.png)\
+![](https://github.com/Aaron52077/wuli-ui/raw/master/static/img_04.png)\
+![](https://github.com/Aaron52077/wuli-ui/raw/master/static/img_05.png)\
+![](https://github.com/Aaron52077/wuli-ui/raw/master/static/img_06.png)\
+![](https://github.com/Aaron52077/wuli-ui/raw/master/static/img_07.png)\
+![](https://github.com/Aaron52077/wuli-ui/raw/master/static/img_08.png)\
+![](https://github.com/Aaron52077/wuli-ui/raw/master/static/img_09.png)\
