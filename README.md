@@ -16,7 +16,7 @@
     * 对应的`pages`中也有与之对应的用法,请详细查考哦！ 
 
 ## 项目部分截图
-![](https://github.com/Aaron52077/wuli-ui/raw/master/static/img_01.png)\ 
+![](https://github.com/Aaron52077/wuli-ui/raw/master/static/img_01.png) 
 ![](https://github.com/Aaron52077/wuli-ui/raw/master/static/img_02.png)\
 ![](https://github.com/Aaron52077/wuli-ui/raw/master/static/img_03.png)\
 ![](https://github.com/Aaron52077/wuli-ui/raw/master/static/img_04.png)\
