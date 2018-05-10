@@ -24,4 +24,4 @@
 ![](https://github.com/Aaron52077/wuli-ui/raw/master/static/img_06.png)\
 ![](https://github.com/Aaron52077/wuli-ui/raw/master/static/img_07.png)\
 ![](https://github.com/Aaron52077/wuli-ui/raw/master/static/img_08.png)\
-![](https://github.com/Aaron52077/wuli-ui/raw/master/static/img_09.png)\
+![](https://github.com/Aaron52077/wuli-ui/raw/master/static/img_09.png)
