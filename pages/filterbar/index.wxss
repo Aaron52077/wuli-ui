@@ -1,0 +1,2 @@
+/* pages/filterbar/index.wxss */
+@import "/components/filterbar/index.wxss";

@@ -13,8 +13,9 @@ import Dialog from './dialog/index'
 import Barcode from './barcode/barcode'
 import Button from './button/button'
 import Gallery from './gallery/index'
-import Qrcode from 'qrcode/qrcode'
-import KeyBoard from 'keyboard/index'
+import Qrcode from './qrcode/qrcode'
+import KeyBoard from './keyboard/index'
+import FilterBar from './filterbar/index'
 import { extend } from './common/helper'
 
 // 兼容老版本，在下次大版本发布时会被移除
@@ -37,6 +38,7 @@ export {
     Gallery,
     Qrcode,
     KeyBoard,
+    FilterBar,
     extend
 }
 

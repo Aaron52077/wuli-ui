@@ -28,7 +28,8 @@
     "pages/button/index",
     "pages/gallery/index",
     "pages/qrcode/index",
-    "pages/keyboard/index"
+    "pages/keyboard/index",
+    "pages/filterbar/index"
   ],
   "window":{
     "backgroundTextStyle":"light",

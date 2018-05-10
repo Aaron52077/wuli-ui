@@ -104,6 +104,9 @@ export default {
             }, {
                 name: 'KeyBoard 软键盘',
                 path: '/pages/keyboard/index'
+            }, {
+                name: 'FilterBar 过滤器',
+                path: '/pages/filterbar/index' 
             }
         ]
     }
