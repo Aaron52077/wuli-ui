@@ -1,0 +1,18 @@
+<view class="container">
+    <view class="doc-title wuli-hairline__bottom">Qrcode</view>
+    <view class="doc-description">二维码</view>
+    <view class="wuli-panel-title">请输入文字，即时输入即时生成</view>
+    <view class="wuli-panel">
+        <view class="wuli-cell">
+            <view class="wuli-cell__bd">
+                <textarea value="{{ value }}" bindinput="bindinput" class="wuli-field-textarea" placeholder="支持文本、网址和电子邮箱" style="height: 4.2em"
+                    maxlength="300" />
+                <view class="wuli-field-textarea__counter">{{ value.length }}/300</view>
+            </view>
+        </view>
+    </view>
+    <view class="wuli-panel-title">提示：Canvas 在微信中无法长按识别, 点击图片进入保存页面长按图片可以保存</view>
+    <view class="wuli-panle">
+        <canvas style="width: 200px; height: 200px; margin: 30px auto;" canvas-id="qrcode" bindtap="previewImage"></canvas>
+    </view>
+</view>

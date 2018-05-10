@@ -1,0 +1,38 @@
+<import src="../../components/gallery/index.wxml" />
+
+<template is="gallery" data="{{ ...gallery }}" />
+
+<view class="container">
+    <view class="doc-title wuli-hairline__bottom">Gallery</view>
+    <view class="doc-description">画廊</view>
+    <view class="wuli-panel-title">基于小程序原生的wx.previewImage</view>
+    <view class="wuli-panel">
+        <view class="wuli-cell">
+            <view class="wuli-cell__bd">
+                <view class="wuli-uploader">
+                    <view class="wuli-uploader__bd">
+                        <block wx:for-items="{{ urls }}" wx:key="{{ index }}">
+                            <view class="wuli-uploader__file" bindtap="previewImage" data-current="{{ item }}">
+                                <image class="wuli-uploader__img" src="{{ item }}" />
+                            </view>
+                        </block>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="wuli-panel-title">自定义gallery 可删除</view>
+        <view class="wuli-cell">
+            <view class="wuli-cell__bd">
+                <view class="wuli-uploader">
+                    <view class="wuli-uploader__bd">
+                        <block wx:for-items="{{ urls }}" wx:key="{{ index }}">
+                            <view class="wuli-uploader__file" bindtap="showGallery" data-current="{{ index }}">
+                                <image class="wuli-uploader__img" src="{{ item }}" />
+                            </view>
+                        </block>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

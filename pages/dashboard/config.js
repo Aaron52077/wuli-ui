@@ -95,6 +95,15 @@ export default {
             }, {
                 name: 'Button 浮动按钮',
                 path: '/pages/button/index'
+            }, {
+                name: 'Gallery 画廊',
+                path: '/pages/gallery/index'
+            }, {
+                name: 'Qrcode 二维码',
+                path: '/pages/qrcode/index'
+            }, {
+                name: 'KeyBoard 软键盘',
+                path: '/pages/keyboard/index'
             }
         ]
     }

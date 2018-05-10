@@ -1,0 +1,2 @@
+/* pages/keyboard/index.wxss */
+@import "/components/keyboard/index.wxss";

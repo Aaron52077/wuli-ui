@@ -1,0 +1,16 @@
+<template name="gallery">
+	<view class="wuli-gallery {{ animateCss }}" wx:if="{{ visible }}">
+		<swiper class="wuli-gallery__swiper" current="{{ current }}" bindchange="{{ bindchange }}" hidden="{{ !urls.length }}">
+			<block wx:for="{{ urls }}" wx:key="{{ item }}">
+				<swiper-item class="wuli-gallery__item">
+					<image  class="wuli-gallery__img" mode="aspectFit" bindtap="{{ hide }}" src="{{ item }}"></image>
+				</swiper-item>
+			</block>
+		</swiper>
+        <view class="wuli-gallery__opr" bindtap="{{ delete }}">
+            <view class="wuli-gallery__del">
+                <view class="wuli-gallery__icon"></view>
+            </view>
+        </view>
+    </view>
+</template>

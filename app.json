@@ -25,7 +25,10 @@
     "pages/toast/index",
     "pages/select/index",
     "pages/barcode/index",
-    "pages/button/index"
+    "pages/button/index",
+    "pages/gallery/index",
+    "pages/qrcode/index",
+    "pages/keyboard/index"
   ],
   "window":{
     "backgroundTextStyle":"light",

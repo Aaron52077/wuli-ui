@@ -1,0 +1,18 @@
+<import src="../../components/keyboard/index.wxml" />
+
+<template is="keyboard" data="{{ ...keyboard }}" />
+
+<view class="container">
+    <view class="doc-title wuli-hairline__bottom">KeyBoard</view>
+    <view class="doc-description">软键盘</view>
+    <view class="wuli-panel-title">请打开调试器，查看控制台打印的数据哦</view>
+    <view class="wuli-panel">
+        <view class="wuli-btns">
+            <button class="wuli-btn" bindtap="open">常用键盘</button>
+            <button class="wuli-btn wuli-btn__primary" bindtap="openWitdhDisorder">数字打乱后键盘</button>
+            <button class="wuli-btn wuli-btn__danger" bindtap="openWithPromiseCallback">具有回调功能的键盘</button>
+            <button class="wuli-btn wuli-btn__warn" bindtap="openPlain">常用验证键盘</button>
+            <button class="wuli-btn wuli-btn__primary" bindtap="openTimed">3秒后自动关闭键盘</button>
+        </view>
+    </view>
+</view>

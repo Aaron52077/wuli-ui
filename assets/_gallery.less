@@ -1,0 +1,86 @@
+@import 'common/_var';
+@import 'common/_mixins';
+
+.wuli-gallery {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: @--color-black;
+    z-index: 1000;
+    &__swiper {
+        width: 100%;
+        height: 100%;
+    }
+    &__item {
+        .display-flex();
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__img {
+        flex: none;
+        width: 100%;
+        height: 100%;
+    }
+    &__opr {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #0D0D0D;
+        color: @--color-white;
+        line-height: 60px;
+        text-align: center;
+    }
+    &__del {
+        display: block;
+    }
+    &__icon {
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAQAAAAAYLlVAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAHdElNRQfhAgcLJQQVEPJBAAAA9UlEQVRo3u2YwRGDIBBF1xTjeLAPW6AE27GQXKyJOvJz0DjGBHZZ9JDJf9xwgccCzoAIIYSQQtBiRp4Z7ZXD27hKYZv9I1nWLFwlsNBnIvolxNpjUyqwtEo3gwiUkDdunjw0zm9GAYT03nrlIYcaExRh+/p52S/PtyUIgq2sTlXl2IeWgc9sWDeUpw/XJjwTClDAJYBw/J3k63O4jmHqYJVFV2TgTChAAQpQgAIUoAAFKPCjAuF4xVTqM/BySgGTQM2bjdZWE4h2zewI0StwFxGRoUJg2PVTDjrj27BG554AxhOGHysyKIIOE6Jz6IipYvaE/AVPaUL1Zysou40AAAAldEVYdGRhdGU6Y3JlYXRlADIwMTctMDItMDdUMTE6Mzc6MDQrMDg6MDCcsdZ8AAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE3LTAyLTA3VDExOjM3OjA0KzA4OjAw7exuwAAAAABJRU5ErkJggg==);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        color: @--color-white;
+        width: 24px;
+        height: 24px;
+        margin: 16px auto;
+    }
+}
+
+.wuli-uploader {
+    &__hd {
+        .display-flex();
+        padding-bottom: 10px;
+        align-items: center;
+    }
+    &__title {
+        .box-flex(1);
+    }
+    &__info {
+        color: #B2B2B2;
+    }
+    &__bd {
+        margin-bottom: -4px;
+        margin-right: -9px;
+        overflow: hidden;
+    }
+    &__file {
+        float: left;
+        margin-right: 9px;
+        margin-bottom: 9px;
+        &-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            .transform(translate(-50%, -50%));
+            color: @--color-white;
+        }
+    }
+    &__img {
+        display: block;
+        width: 79px;
+        height: 79px;
+    }
+}

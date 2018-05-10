@@ -1,0 +1,9 @@
+/* pages/qrcode/index.wxss */
+.wuli-field-textarea {
+    display: block;
+    width: 100%;
+}
+.wuli-field-textarea__counter {
+    color: #B2B2B2;
+    text-align: right;
+}
