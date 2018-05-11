@@ -48,16 +48,18 @@
 					<view class="wuli-filterbar__btn wuli-filterbar__btn--danger" data-index="{{ index }}" bindtap="{{ onConfirm }}">确定</view>
 				</div>
 			</view>
-			<view class="wuli-panel" hidden="{{ !item.visible }}" wx:if="{{ item.type === 'radio' }}">
-				<radio-group name="{{ item.value }}" bindchange="{{ radioChange }}" data-index="{{ index }}" data-item="{{ item }}">
-					<label class="wuli-cell wuli-cell__access" wx:for="{{ item.children }}" wx:for-item="p" wx:key="{{ item.value }}">
-					<radio class="wuli-check" value="{{ p.value }}" checked="{{ p.checked }}" />
-					<view class="wuli-cell__bd">{{ p.label }}</view>
-					<view class="wuli-cell__ft wuli-cell__ft--in-radio" wx:if="{{ p.checked }}">
-						<icon class="wuli-icon-radio" type="success_no_circle" size="16"></icon>
-					</view>
-				</label>
-				</radio-group>
+			<view class="wuli-panel" style="margin-top: 0" hidden="{{ !item.visible }}" wx:if="{{ item.type === 'radio' }}">
+                <radio-group class="wuli-select__list" name="{{ item.value }}" bindchange="{{ radioChange }}" data-index="{{ index }}" data-item="{{ item }}">
+                    <label wx:for="{{ item.children }}" wx:for-item="p" wx:key="{{ item.value }}">
+                      <view class="wuli-cell">
+                        <radio class="wuli-select__radio" value="{{ p.value }}" checked="{{ p.checked }}" />
+                        <view class="wuli-cell__bd">{{ p.label }}</view>
+                        <view wx:if="{{ p.checked }}" class="wuli-cell__ft">
+                          <icon type="success_no_circle" size="14"></icon>
+                        </view>
+                      </view>
+                    </label>
+                </radio-group>
 			</view>
 			<view class="wuli-panel" hidden="{{ !item.visible }}" wx:if="{{ item.type === 'checkbox' }}">
 				<checkbox-group name="{{ item.value }}" bindchange="{{ checkboxChange }}" data-index="{{ index }}" data-item="{{ item }}">

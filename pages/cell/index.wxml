@@ -88,31 +88,24 @@
     <view class="wuli-panel">
         <view class="wuli-cell wuli-cell__access">
             <view class="wuli-cell__bd">多行列表</view>
-            <view class="wuli-cell__ft"></view>
+            <view class="wuli-cell__ft">详细信息</view>
         </view>
         <view class="wuli-cell wuli-cell__access">
             <view class="wuli-cell__bd">多行列表</view>
-            <view class="wuli-cell__ft"></view>
+            <view class="wuli-cell__ft">详细信息</view>
         </view>
         <view class="wuli-cell wuli-cell__access">
             <view class="wuli-cell__bd">多行列表</view>
-            <view class="wuli-cell__ft"></view>
+            <view class="wuli-cell__ft">详细信息</view>
         </view>
     </view>
 
+    <view class="wuli-panel-title">左滑动可删除</view>
     <view class="wuli-panel">
-        <view class="wuli-cell wuli-cell__access">
-            <view class="wuli-cell__bd">多行列表</view>
-            <view class="wuli-cell__ft">详细信息</view>
-        </view>
-        <view class="wuli-cell wuli-cell__access">
-            <view class="wuli-cell__bd">多行列表</view>
-            <view class="wuli-cell__ft">详细信息</view>
-        </view>
-        <view class="wuli-cell wuli-cell__access">
-            <view class="wuli-cell__bd">多行列表</view>
-            <view class="wuli-cell__ft">详细信息</view>
+        <view class="wuli-cell__item" wx:for="{{list}}" wx:key="{{index}}">
+            <view bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd" data-index="{{index}}" style="{{item.txtStyle}}"
+                    class="wuli-cell__warp">{{item.title}}</view>
+            <view data-index="{{index}}" bindtap="delItem" class="wuli-cell__del">删除</view>
         </view>
     </view>
-
 </view>

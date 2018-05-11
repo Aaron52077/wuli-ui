@@ -5,14 +5,14 @@ Page({
         pageStyle: undefined,
         items: [{
                 type: 'radio',
-                label: 'Updated',
-                value: 'updated',
+                label: '风格',
+                value: '0',
                 children: [{
-                        label: 'Recently updated',
+                        label: '新古典',
                         value: 'desc',
                     },
                     {
-                        label: 'Least recently updated',
+                        label: '现代',
                         value: 'asc',
                     },
                 ],
@@ -20,14 +20,14 @@ Page({
             },
             {
                 type: 'text',
-                label: 'Forks',
-                value: 'forks',
+                label: '面积',
+                value: '90',
                 groups: ['002'],
             },
             {
                 type: 'sort',
-                label: 'Stars',
-                value: 'stars',
+                label: '户型',
+                value: '1',
                 groups: ['003'],
             },
             {
@@ -83,7 +83,7 @@ Page({
                         label: '配送方式',
                         value: 'away',
                         children: [{
-                                label: '京东配送',
+                                label: '专人配送',
                                 value: '1',
                             },
                             {
@@ -233,29 +233,28 @@ Page({
 
                 checkedItems.forEach((n) => {
                     if (n.checked) {
-                        if (n.value === 'updated') {
+                        if (n.value === '0') {
                             const selected = n.children.filter((n) => n.checked).map((n) => n.value).join(' ')
-                            params.sort = n.value
-                            params.order = selected
-                        } else if (n.value === 'stars') {
-                            params.sort = n.value
-                            params.order = n.sort === 1 ? 'asc' : 'desc'
-                        } else if (n.value === 'forks') {
-                            params.sort = n.value
+                            params.style = parseInt(n.value)
+                            //params.order = selected
+                        } else if (n.value === '90') {
+                            params.area = parseInt(n.value)
+                            //params.order = n.area === 1 ? 'asc' : 'desc'
+                        } else if (n.value === '1') {
+                            params.unit = parseInt(n.value)
                         } else if (n.value === 'filter') {
                             n.children.filter((n) => n.selected).forEach((n) => {
-                                if (n.value === 'language') {
+                                if (n.value === '90') {
                                     const selected = n.children.filter((n) => n.checked).map((n) => n.value).join(' ')
-                                    params.language = selected
-                                } else if (n.value === 'query') {
+                                    params.area = selected
+                                } else if (n.value === '0') {
                                     const selected = n.children.filter((n) => n.checked).map((n) => n.value).join(' ')
-                                    params.query = selected
+                                    params.style = selected
                                 }
                             })
                         }
                     }
                 })
-
                 this.getRepos(params)
             },
             onScroll(e) {
@@ -268,27 +267,27 @@ Page({
         this.getRepos()
     },
     getRepos(params = {}) {
-        const language = params.language || 'javascript'
-        const query = params.query || 'react'
-        const q = `${query}+language:${language}`
+        const style = params.style || 'style'
+        const area = params.area || 'area'
+        const unit = params.unit || 'unit'
+        const pageindex = `${1}`
         const data = Object.assign({
-            q,
+            pageindex
         }, params)
 
         this.FilterBar.onCloseSelect()
 
         wx.showLoading()
         wx.request({
-            url: `https://api.github.com/search/repositories`,
+            url: `https://api.ejiadg.cn/api/wap/Cases/PagedList?SubjectId=386`,
             data,
             success: (res) => {
-                console.log(res)
 
                 wx.hideLoading()
 
                 this.setData({
-                    repos: res.data.items.map((n) => Object.assign({}, n, {
-                        date: n.created_at.substr(0, 7),
+                    repos: res.data.Data.map((n) => Object.assign({}, n, {
+                        date: n.Data
                     })),
                 })
             },

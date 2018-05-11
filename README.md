@@ -14,6 +14,7 @@
 - 项目结构中可以按照自身项目需求添加需要的`components`
     * 在`components`中找到你需要的伪组件模版
     * 对应的`pages`中也有与之对应的用法,请详细查考哦！ 
+    * 如果想重置样式,请在`assets`对用的名称修改(ps:只需在预编译过程中维护`module.less`、`package.less`即可)
 
 ## 项目部分截图
 ![](https://github.com/Aaron52077/wuli-ui/raw/master/static/img_01.png) 

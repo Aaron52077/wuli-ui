@@ -4,7 +4,7 @@
     padding: 7px 15px;
     color: #333;
     &__wrapped {
-        margin: 0 15px;
+        margin: 10px 15px 0;
         background-color: @--color-white;
         &::after {
             left: 0;
@@ -15,8 +15,8 @@
     &.wuli-field__wrapped::after {
         display: block;
     }
-    &__error {
-        color: @--color-danger;
+    &__error.wuli-field__wrapped::after {
+        border-color: @--color-danger;
     }
     &__title {
         color: #333;

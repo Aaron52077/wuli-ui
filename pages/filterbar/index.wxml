@@ -1,30 +1,31 @@
-<import src="../../components/filterbar/index.wxml" />
+<import src="/components/filterbar/index.wxml" />
 
 <view class="container" style="{{ pageStyle }}">
     <view class="doc-title wuli-hairline__bottom">FilterBar</view>
     <view class="doc-description">筛选栏</view>
     <template is="filterbar" data="{{ ...$filterbar }}" />
+    <view class="wuli-panel-title">只针对展示demo,未对搜索条件做处理</view>
     <view class="wuli-panel">
         <view class="wuli-card" wx:for="{{ repos }}" wx:key="">
             <view class="wuli-card__thumb">
-                <image class="wuli-card__img" src="{{ item.owner.avatar_url }}" mode="aspectFit"></image>
+                <image class="wuli-card__img" src="http:{{ item.cover }}" mode="widthFix"></image>
             </view>
             <view class="wuli-card__detail">
                 <view class="wuli-card__detail-row">
-                    <view class="wuli-card__right-col">{{ item.name }}</view>
+                    <view class="wuli-card__right-col">{{ item.style }}</view>
                     <view class="wuli-card__left-col wuli-ellipsis--l2">
-                            {{ item.description }}
+                            {{ item.property }}
                     </view>
                 </view>
                 <view class="wuli-card__detail-row wuli-gray-darker">
-                    <view class="wuli-card__right-col">forks: {{ item.forks_count }}</view>
+                    <view class="wuli-card__right-col">面积: {{ item.area }}</view>
                     <view class="wuli-card__left-col">
-                            stars: {{ item.stargazers_count }} 
+                        风格: {{ item.style }} 
                     </view>
                 </view>
 
                 <view class="wuli-card__detail-row wuli-gray-darker">
-                    <view class="wuli-card__left-col wuli-red">date: {{ item.date }}</view>
+                    <view class="wuli-card__left-col wuli-red">户型: {{ item.unit }}</view>
                 </view>
             </view>
         </view>

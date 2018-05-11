@@ -38,7 +38,7 @@ Page({
                 })
                 // 接口回调
                 return http({
-                        url: 'https://www.skyvow.cn/api/user/sign/in',
+                        url: 'https://api.ejiadg.cn/api/fc/WxOpen/OnLogin',
                         method: 'POST',
                         data: {
                             username: 'admin',
@@ -46,19 +46,19 @@ Page({
                         }
                     })
                     .then(res => {
-                        const data = res.data
+                        const data = `回调成功`
 
                         console.log(data)
 
                         wx.hideLoading()
 
                         wx.showToast({
-                            title: data.meta.message,
+                            title: data,
                             duration: 3000,
                         })
 
                         if (data.meta.code !== 0) {
-                            return Promise.reject(data.meta.message)
+                            return Promise.reject(data)
                         }
                     })
             },

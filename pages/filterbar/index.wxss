@@ -1,2 +1,6 @@
 /* pages/filterbar/index.wxss */
 @import "/components/filterbar/index.wxss";
+.wuli-panel-title,
+.wuli-panel {
+    padding-top: 10px;
+}
