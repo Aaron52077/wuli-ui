@@ -19,7 +19,7 @@
 
     <view class="wuli-panel">
         <view class="wuli-cell">
-            <view class="wuli-cell__icon wuli-icon wuli-icon-checked" style="color:#38f;"></view>
+            <view class="wuli-cell__icon wuli-icon wuli-icon__checked" style="color:#38f;"></view>
             <view class="wuli-cell__bd">单行列表</view>
             <view class="wuli-cell__ft">详细信息</view>
         </view>
