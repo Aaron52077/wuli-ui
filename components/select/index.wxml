@@ -9,7 +9,7 @@
         <radio class="wuli-select__radio" value="{{ item.value }}" checked="{{ item.value === checkedValue }}"/>
         <view
           class="wuli-cell__bd"
-          style="{{ parse.getItemStyle(item, checkedValue, activeColor) }}">{{ item.name }}</view>
+          style="{{ parse.getItemStyle(item, checkedValue, activeColor) }}">{{ item.name }}{{ item.id }}</view>
         <view wx:if="{{ item.value === checkedValue }}" class="wuli-cell__ft">
           <icon type="success_no_circle" color="{{ parse.getColor(activeColor) }}" size="14"></icon>
         </view>

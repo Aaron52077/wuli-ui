@@ -56,6 +56,12 @@ export default {
             }, {
                 name: 'Tag 标记',
                 path: '/pages/tag/index'
+            }, {
+                name: 'Index 索引选择器',
+                path: '/pages/index/index'
+            }, {
+                name: 'Sticky 吸顶容器',
+                path: '/pages/sticky/index'
             }
         ]
     },

@@ -1,13 +1,28 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+<view class="container wuli-mail">
+    <view class="doc-title wuli-hairline__bottom">Index</view>
+    <view class="doc-description">索引选择器</view>
+    <scroll-view class="wuli-mail__groups" style="height: {{windowHeight - 75}}px;" scroll-with-animation scroll-y scroll-into-view="{{scrollIntoView}}">
+        <block wx:for="{{groupJson}}" wx:for-item="group" wx:key="{{index}}">
+            <view class="wuli-mail__group" id="{{group.groupName}}">
+                <view class="group-name">{{group.groupName}}</view>
+                <view wx:for="{{group.users}}" wx:for-item="user" wx:for-index="idx" class="mail-cell" wx:key="{{idx}}">
+                    <view class="mail-cell__hd">
+                        <image class="mail-cell__img" src="{{user.avatar}}" lazy-load mode="aspectFill"></image>
+                    </view>
+                    <view class="mail-cell__bd">
+                        <view class="mail-cell__title">{{user.name}}({{user.role}})</view>
+                        <view class="mail-cell__desc">{{user.info}}</view>
+                    </view>
+                    <view class="mail-cell__ft"></view>
+                </view>
+            </view>
+        </block>
+    </scroll-view>
+
+    <view class="wuli-mail__nav" bindtouchmove="touchmove" bindtouchcancel="touchcancel" bindtouchend="touchend">
+        <view bindtap="tabLetter" data-index="{{item}}" wx:for="{{letters}}" class="wuli-mail__letter" wx:key="">
+            <text class="mail-letter__text {{selected == item ? 'mail-letter__actived' : ''}}">{{item}}</text>
+        </view>
+    </view>
 </view>
