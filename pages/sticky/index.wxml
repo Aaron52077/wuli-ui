@@ -1,0 +1,156 @@
+<!--pages/sticky/index.wxml-->
+<view class="container">
+    <view class="doc-title wuli-hairline--bottom">Sticky</view>
+    <view class="doc-description">吸顶容器</view>
+
+    <wuli-sticky class="wuli-panel" scrollTop="{{scrollTop}}">
+        <wuli-sticky-item wuli-class="wuli-panel-title">
+            <view slot="title">
+                逻辑层
+            </view>
+            <view class="wuli-panel" slot="content">
+                <view class="wuli-cell">
+                    <view class="wuli-cell__bd">注册程序</view>
+                </view>
+                <view class="wuli-cell">
+                    <view class="wuli-cell__bd">场景值</view>
+                </view>
+                <view class="wuli-cell">
+                    <view class="wuli-cell__bd">注册页面</view>
+                </view>
+                <view class="wuli-cell">
+                    <view class="wuli-cell__bd">路由</view>
+                </view>
+                <view class="wuli-cell">
+                    <view class="wuli-cell__bd">模块化</view>
+                </view>
+                <view class="wuli-cell">
+                    <view class="wuli-cell__bd">API</view>
+                </view>
+            </view>
+        </wuli-sticky-item>
+        <wuli-sticky-item wuli-class="wuli-panel-title">
+            <view slot="title">
+                视图层
+            </view>
+            <view class="wuli-panel" slot="content">
+                <view class="wuli-cell">
+                    <view class="wuli-cell__bd">注册程序</view>
+                </view>
+                <view class="wuli-cell">
+                    <view class="wuli-cell__bd">场景值</view>
+                </view>
+                <view class="wuli-cell">
+                    <view class="wuli-cell__bd">注册页面</view>
+                </view>
+                <view class="wuli-cell">
+                    <view class="wuli-cell__bd">路由</view>
+                </view>
+                <view class="wuli-cell">
+                    <view class="wuli-cell__bd">模块化</view>
+                </view>
+                <view class="wuli-cell">
+                    <view class="wuli-cell__bd">API</view>
+                </view>
+            </view>
+        </wuli-sticky-item>
+        <wuli-sticky-item wuli-class="wuli-panel-title">
+            <view slot="title">
+                自定义组件
+            </view>
+            <view class="wuli-panel" slot="content">
+                <view class="wuli-cell">
+                    <view class="wuli-cell__bd">注册程序</view>
+                </view>
+                <view class="wuli-cell">
+                    <view class="wuli-cell__bd">场景值</view>
+                </view>
+                <view class="wuli-cell">
+                    <view class="wuli-cell__bd">注册页面</view>
+                </view>
+                <view class="wuli-cell">
+                    <view class="wuli-cell__bd">路由</view>
+                </view>
+                <view class="wuli-cell">
+                    <view class="wuli-cell__bd">模块化</view>
+                </view>
+                <view class="wuli-cell">
+                    <view class="wuli-cell__bd">API</view>
+                </view>
+            </view>
+        </wuli-sticky-item>
+        <wuli-sticky-item wuli-class="wuli-panel-title">
+            <view slot="title">
+                插件
+            </view>
+            <view class="wuli-panel" slot="content">
+                <view class="wuli-cell">
+                    <view class="wuli-cell__bd">注册程序</view>
+                </view>
+                <view class="wuli-cell">
+                    <view class="wuli-cell__bd">场景值</view>
+                </view>
+                <view class="wuli-cell">
+                    <view class="wuli-cell__bd">注册页面</view>
+                </view>
+                <view class="wuli-cell">
+                    <view class="wuli-cell__bd">路由</view>
+                </view>
+                <view class="wuli-cell">
+                    <view class="wuli-cell__bd">模块化</view>
+                </view>
+                <view class="wuli-cell">
+                    <view class="wuli-cell__bd">API</view>
+                </view>
+                <view class="wuli-cell">
+                    <view class="wuli-cell__bd">注册程序</view>
+                </view>
+                <view class="wuli-cell">
+                    <view class="wuli-cell__bd">场景值</view>
+                </view>
+                <view class="wuli-cell">
+                    <view class="wuli-cell__bd">注册页面</view>
+                </view>
+                <view class="wuli-cell">
+                    <view class="wuli-cell__bd">路由</view>
+                </view>
+                <view class="wuli-cell">
+                    <view class="wuli-cell__bd">模块化</view>
+                </view>
+                <view class="wuli-cell">
+                    <view class="wuli-cell__bd">API</view>
+                </view>
+                <view class="wuli-cell">
+                    <view class="wuli-cell__bd">场景值</view>
+                </view>
+                <view class="wuli-cell">
+                    <view class="wuli-cell__bd">注册页面</view>
+                </view>
+                <view class="wuli-cell">
+                    <view class="wuli-cell__bd">路由</view>
+                </view>
+                <view class="wuli-cell">
+                    <view class="wuli-cell__bd">模块化</view>
+                </view>
+                <view class="wuli-cell">
+                    <view class="wuli-cell__bd">API</view>
+                </view>
+                <view class="wuli-cell">
+                    <view class="wuli-cell__bd">场景值</view>
+                </view>
+                <view class="wuli-cell">
+                    <view class="wuli-cell__bd">注册页面</view>
+                </view>
+                <view class="wuli-cell">
+                    <view class="wuli-cell__bd">路由</view>
+                </view>
+                <view class="wuli-cell">
+                    <view class="wuli-cell__bd">模块化</view>
+                </view>
+                <view class="wuli-cell">
+                    <view class="wuli-cell__bd">API</view>
+                </view>
+            </view>
+        </wuli-sticky-item>
+    </wuli-sticky>
+</view>

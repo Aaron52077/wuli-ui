@@ -1,0 +1,3 @@
+<view class="wuli-sticky wuli-class">
+    <slot></slot>
+</view>

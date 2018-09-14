@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "Sticky 吸顶容器",
+    "usingComponents": {
+        "wuli-sticky": "../../components/sticky/index",
+        "wuli-sticky-item": "../../components/sticky-item/index"
+    }
+}

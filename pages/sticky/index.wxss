@@ -1,0 +1,9 @@
+/* pages/sticky/index.wxss */
+
+.wuli-panel {
+    margin-top: 0;
+}
+
+.wuli-panel-title {
+    padding: 0;
+}

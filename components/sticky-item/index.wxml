@@ -1,0 +1,10 @@
+<view class="wuli-sticky__item">
+    <view class="wuli-sticky__hd wuli-class {{ isFixed === true ? 'wuli-sticky__fixed' : '' }}">
+        <view class="wuli-sticky__title">
+            <slot name="title"></slot>
+        </view>
+    </view>
+    <view class="wuli-sticky__bd">
+        <slot name="content"></slot>
+    </view>
+</view>
