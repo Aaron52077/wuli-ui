@@ -7,6 +7,12 @@
     <view class="doc-description">浮动按钮</view>
 
     <view class="wuli-panel">
+        <view class="wuli-cell wuli-cell__access">
+            <view class="wuli-cell__bd">浮动位置</view>
+            <picker class="wuli-cell__ft" bindchange="pickerChange" value="{{index}}" range="{{types}}">
+                {{types[index]}}
+            </picker>
+        </view>
         <view class="wuli-cell wuli-cell__switch">
             <view class="wuli-cell__bd">切换状态</view>
             <view class="wuli-cell__ft">

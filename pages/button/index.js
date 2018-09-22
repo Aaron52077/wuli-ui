@@ -3,13 +3,13 @@ import { Button } from '../../components/index'
 Page({
 	data: {
 		types: ['topLeft', 'topRight', 'bottomLeft', 'bottomRight'], 
-		index: 3, 
+		index: 2, 
 		opened: !1, 
 	},
 	onLoad() {
 		this.initButton()
 	},
-	initButton(position = 'bottomRight') {
+	initButton(position = 'bottomLeft') {
 		this.setData({
 			opened: !1, 
 		})
@@ -36,12 +36,14 @@ Page({
 					showCancel: !1, 
 				})
 
-				index === 1 && wx.switchTab({
-					url: '/pages/about/index'
+				index === 1 && wx.showModal({
+					title: 'Thank you for your support!', 
+					showCancel: !1, 
 				})
 
-				index === 2 && wx.switchTab({
-					url: '/pages/index/index'
+				index === 2 && wx.showModal({
+					title: 'Thank you for your support!', 
+					showCancel: !1, 
 				})
 
 				return true
@@ -57,8 +59,11 @@ Page({
 		e.detail.value ? this.button.open() : this.button.close()
 	},
 	pickerChange(e) {
-		const index = e.detail.value
+        const index = e.detail.value
 		const position = this.data.types[index]
-		this.initButton(position)
+        this.initButton(position)
+        this.setData({
+            index: index
+        })
 	},
 })

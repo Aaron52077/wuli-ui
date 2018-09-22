@@ -3,14 +3,14 @@ import { Gallery } from '../../components/index'
 Page({
     data: {
         urls: [
-            'https://unsplash.it/200/200',
-            'https://unsplash.it/300/300',
-            'https://unsplash.it/400/400',
-            'https://unsplash.it/600/600',
-            'https://unsplash.it/800/800',
-            'https://unsplash.it/900/900',
-            'https://unsplash.it/1000/1000',
-            'https://unsplash.it/1200/1200',
+            'cloud://wuli-ui-311667.7775-wuli-ui-311667/200.jpg',
+            'cloud://wuli-ui-311667.7775-wuli-ui-311667/300.jpg',
+            'cloud://wuli-ui-311667.7775-wuli-ui-311667/400.jpg',
+            'cloud://wuli-ui-311667.7775-wuli-ui-311667/600.jpg',
+            'cloud://wuli-ui-311667.7775-wuli-ui-311667/800.jpg',
+            'cloud://wuli-ui-311667.7775-wuli-ui-311667/900.jpg',
+            'cloud://wuli-ui-311667.7775-wuli-ui-311667/1000.jpg',
+            'cloud://wuli-ui-311667.7775-wuli-ui-311667/1200.jpg',
         ]
     },
     onLoad() { },
