@@ -1,0 +1,9 @@
+<view id="{{name}}" class="wuli-collapse__item">
+    <view class="collapse-cell" bindtap="wuliTrigger">
+        <view class="collapse-cell__bd">{{title}}</view>
+        <view class="collapse-cell__ft {{ showContent ? 'collapse-cell__arrow' : '' }}"></view>
+    </view>
+    <view class="{{showContent ? 'wuli-collapse__content--show' : ' wuli-collapse__content'}} wuli-class-content">
+        <slot name="content"></slot>
+    </view>
+</view>

@@ -1,0 +1,73 @@
+@import 'common/_var';
+@import 'common/_mixins';
+
+.wuli-collapse {
+    &__item {
+        .collapse-cell {
+            position: relative;
+            padding: 12px 15px;
+            .display-flex();
+            align-items: center;
+            line-height: 1.4;
+            font-size: @--size-base;
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 200%;
+                height: 200%;
+                transform: scale(.5);
+                transform-origin: 0 0;
+                pointer-events: none;
+                box-sizing: border-box;
+                border: 0 solid #e5e5e5;
+                border-bottom-width: 1px;
+                left: 15px;
+                right: 0;
+            }
+            &--last-child::after, 
+            &:last-child::after {
+                display: none; 
+            }
+            &__bd {
+                .box-flex(1);
+            }
+            &__ft {
+                position: relative;
+                text-align: right;
+                color: #666;
+                padding-right: 13px;
+                &::after {
+                    position: absolute;
+                    top: 50%;
+                    right: 2px;
+                    content: '';
+                    display: inline-block;
+                    height: 6px;
+                    width: 6px;
+                    border-width: 2px 2px 0 0;
+                    border-color: #c8c8c8;
+                    border-style: solid;
+                    transform: translateY(-50%) matrix(.71, .71, -.71, .71, 0, 0);
+                    transform-origin: top -150%;
+                }
+            }
+            &__arrow {
+                &::after {
+                    .transform(rotate(135deg));
+                    .transition(transform .2s ease-in-out);
+                }
+            }
+        }
+    }
+    &__content {
+        display: none;
+        opacity: 0;
+        transition: @--fade-linear-transition;
+        &--show {
+            opacity: 1;
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,3 @@
+<view class="wuli-collapse wuli-class" bindcollapse="wuliClick">
+    <slot></slot>
+</view>

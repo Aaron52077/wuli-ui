@@ -31,7 +31,8 @@
         "pages/keyboard/index",
         "pages/filterbar/index",
         "pages/index/index",
-        "pages/sticky/index"
+        "pages/sticky/index",
+        "pages/collapse/index"
     ],
     "window": {
         "backgroundTextStyle": "light",

@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "Collapse 折叠面板",
+    "usingComponents": {
+        "wuli-collapse": "../../components/collapse/index",
+        "wuli-collapse-item": "../../components/collapse-item/index"
+    }
+}

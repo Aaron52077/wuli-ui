@@ -56,12 +56,6 @@ export default {
             }, {
                 name: 'Tag 标记',
                 path: '/pages/tag/index'
-            }, {
-                name: 'Index 索引选择器',
-                path: '/pages/index/index'
-            }, {
-                name: 'Sticky 吸顶容器',
-                path: '/pages/sticky/index'
             }
         ]
     },
@@ -95,6 +89,17 @@ export default {
     plugins: {
         title: '插件类',
         content: [
+            {
+                name: 'Collapse 折叠面板',
+                path: '/pages/collapse/index' 
+            },
+            {
+                name: 'Index 索引选择器',
+                path: '/pages/index/index'
+            }, {
+                name: 'Sticky 吸顶容器',
+                path: '/pages/sticky/index'
+            },
             {
                 name: 'Barcode 条形码',
                 path: '/pages/barcode/index'
