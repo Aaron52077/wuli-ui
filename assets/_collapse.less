@@ -3,11 +3,6 @@
 
 .wuli-collapse {
     &__item {
-        position: relative;
-        height: 43px;
-        &.is-collapse {
-            height: auto;
-        }
         .collapse-cell {
             position: relative;
             padding: 12px 15px;
@@ -67,23 +62,22 @@
         }
     }
     &__content {
-        visibility: hidden;
+        position: relative;
+        height: 0;
+        overflow: hidden;
         &--show {
-            visibility: visible;
+            height: auto;
             .wuli-collapse__container {
                 opacity: 1;
-                transform: translate3d(0, 0, 0);
+                transform: translateY(0);
             }
         }
     }
     &__container {
         position: relative;
-        left: 0;
-        right: 0;
-        height: auto;
-        transform: translate3d(0, -100%, 0);
         opacity: 0;
+        background-color: @--color-white;
+        transform: translateY(-50%);
         transition: @--md-fade-transition;
-        overflow: hidden;
     }
 }
